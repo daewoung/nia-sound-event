@@ -83,6 +83,7 @@ def retain_one_event_per_tag(events):
   outputs = []
   for tag in unique_tags:
     selected_events = [x for x in events if x['label']==tag]
+    # TODO: find better score formular
     scores = [x['confidence'] * (x['offset']-x['onset']) for x in selected_events]
     max_id = scores.index(max(scores))
     outputs.append(selected_events[max_id])
@@ -106,12 +107,12 @@ def jsonify(event_labels, dataset):
 
     annotations =[{'id': 1,
                     'result': [{
-                                "value":{"start":event['onset'],"end":event['offset'],"labels":[event['label']]},
+                                "value":{"start":event['onset'],"end":event['offset'],"labels":[event['label']],"scores":str(event["confidence"])},
                                 "from_name":"label",
                                 "to_name":"audio",
                                 "type":"labels",
                               } for event in piece_event]}]
-    json_event = {'id':event_id, 'predictions': annotations, 'data': {'audio': sample_path}, }
+    json_event = {'id':event_id, 'predictions': annotations, 'data': {'audio': sample_path, 'text': dataset.wav_list[event_id].stem}}
     json_list.append(json_event)
 
   return json_list
@@ -139,6 +140,6 @@ if __name__ == "__main__":
     pred += quantize_prediction(framewise_output, lens, shifted_index= i * data_loader.batch_size, threshold=args.threshold)
 
   jsonified_pred = jsonify(pred, dataset)
-  with open("test_prediction.json", "w") as json_file:
+  with open(f"test_prediction_threshold{str(args.threshold)}.json", "w") as json_file:
     json.dump(jsonified_pred, json_file)
   print(pred)
