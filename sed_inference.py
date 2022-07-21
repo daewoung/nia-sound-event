@@ -71,6 +71,9 @@ def quantize_prediction(pred, lens, threshold=0.1, shifted_index=0):
     prev_batch_id = batch_id
   if events_of_piece != []:
     events_of_piece = retain_one_event_per_tag(events_of_piece)
+
+    # sort by onset time
+    events_of_piece.sort(key=lambda x:x['onset'])
     total_events.append(events_of_piece)
 
   return total_events
@@ -107,7 +110,7 @@ def jsonify(event_labels, dataset):
 
     annotations =[{'id': 1,
                     'result': [{
-                                "value":{"start":event['onset'],"end":event['offset'],"labels":[event['label']],"scores":str(event["confidence"])},
+                                "value":{"start":event['onset'],"end":event['offset'],"labels":[event['label']],"score":float(event["confidence"])},
                                 "from_name":"label",
                                 "to_name":"audio",
                                 "type":"labels",
