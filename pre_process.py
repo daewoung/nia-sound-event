@@ -20,4 +20,4 @@ if __name__ == "__main__":
   dataset = PreProcAudio(args.path, args.sr, pre_process=True)
 
   sample_out = dataset[0]
-  dataset[0]
+  print(sample_out)

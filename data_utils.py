@@ -73,6 +73,24 @@ class PreProcAudio(NeutuneSet):
 
     return datasample['audio'], datasample['label']
 
+
+def pad_collate_with_label(raw_batch):
+  '''
+  Collate function for classification task with arbitrary length of audio
+  
+  Outputs:
+    audio_tensor (torch.Tensor): Padded audio tensor
+    label_tensor (torch.LongTensor): Label for each data sample in the batch
+  '''
+  lens = [len(x[0]) for x in raw_batch]
+  max_len = max(lens)
+  output = torch.zeros(len(raw_batch), max_len)
+
+  for i, sample in enumerate(raw_batch):
+    output[i, :len(sample[0])] = sample[0]
+  
+  return output, torch.LongTensor([x[1] for x in raw_batch])
+
 def pad_collate(raw_batch):
   lens = [len(x) for x in raw_batch]
   max_len = max(lens)
