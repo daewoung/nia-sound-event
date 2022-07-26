@@ -1,5 +1,4 @@
-import librosa
-from panns_inference import AudioTagging, SoundEventDetection
+from panns_inference import SoundEventDetection
 import numpy as np
 import argparse
 from pathlib import Path
@@ -7,36 +6,22 @@ import torchaudio
 from torch.utils.data import DataLoader
 import torch
 import json
+from tqdm.auto import tqdm 
+from data_utils import OnFlyAudio, pad_collate
+from meta_utils import MetaCreator
 
 
-class AudioSet:
-  def __init__(self, path, sr=32000) -> None:
-    self.path = Path(path)
-    self.wav_list = sorted(list(self.path.rglob('*.wav')))
-    self.sr = sr
-
-  def __len__(self):
-    return len(self.wav_list)
-  
-  def __getitem__(self, idx):
-    wav_path = self.wav_list[idx]
-    audio, sr = torchaudio.load(wav_path)
-    audio = audio.mean(0)
-    if sr != self.sr:
-      audio = torchaudio.functional.resample(audio, sr, self.sr)
-    return audio
+DEV = 'cuda'
 
 
-def pad_collate(raw_batch):
-  lens = [len(x) for x in raw_batch]
-  max_len = max(lens)
-  output = torch.zeros(len(raw_batch), max_len)
 
-  for i, sample in enumerate(raw_batch):
-    output[i, :len(sample)] = sample
-  
-  return output, lens
+class Smoother(torch.nn.Module):
+  def __init__(self) -> None:
+    super().__init__()
+    self.conv = torch.nn.Conv1d(1, 1, )
 
+  def forward(self, pred):
+    return
 
 
 def quantize_prediction(pred, lens, threshold=0.1, shifted_index=0):
@@ -93,7 +78,7 @@ def retain_one_event_per_tag(events):
   return outputs
 
 
-def jsonify(event_labels, dataset):
+def jsonify(event_labels, dataset, meta_manager:MetaCreator):
   '''
   event_labels (list of dict):
     each item has {'data_id': int, 'label': str, 'onset': float, 'offset': float}
@@ -115,7 +100,7 @@ def jsonify(event_labels, dataset):
                                 "to_name":"audio",
                                 "type":"labels",
                               } for event in piece_event]}]
-    json_event = {'id':event_id, 'predictions': annotations, 'data': {'audio': sample_path, 'text': dataset.wav_list[event_id].stem}}
+    json_event = {'id':event_id, 'predictions': annotations, 'data': {'audio': sample_path, 'text': meta_manager.get_class_name_and_title(dataset.wav_list[event_id])}}
     json_list.append(json_event)
 
   return json_list
@@ -123,26 +108,29 @@ def jsonify(event_labels, dataset):
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser("sed_inference")
-  parser.add_argument('--path', type=str, default='/home/teo/userdata/nia_dataset',
+  parser.add_argument('--path', type=str, default='/home/teo/label-studio_files/nia_dataset/1cycle',
+                      help='directory path to the dataset')
+  parser.add_argument('--vocab_path', type=str, default='vocab.json',
                       help='directory path to the dataset')
   parser.add_argument('--threshold', type=float, default=0.1,
                       help='sound event detection threshold value')
 
   args = parser.parse_args()
 
-  dataset = AudioSet(args.path)
+  dataset = OnFlyAudio(args.path)
+  meta_manager = MetaCreator(args.vocab_path)
 
   data_loader = DataLoader(dataset, batch_size=10, collate_fn=pad_collate, pin_memory=True, num_workers=2, drop_last=False)
   sed = SoundEventDetection(checkpoint_path=None, device='cuda')
   pred = []
 
-  for i, batch in enumerate(data_loader):
+  for i, batch in tqdm(enumerate(data_loader)):
     audio, lens = batch
     framewise_output = sed.inference(audio)
 
     pred += quantize_prediction(framewise_output, lens, shifted_index= i * data_loader.batch_size, threshold=args.threshold)
-
-  jsonified_pred = jsonify(pred, dataset)
-  with open(f"test_prediction_threshold{str(args.threshold)}.json", "w") as json_file:
-    json.dump(jsonified_pred, json_file)
+    break
+  jsonified_pred = jsonify(pred, dataset, meta_manager)
+  with open(f"prediction_threshold{str(args.threshold)}.json", "w") as json_file:
+    json.dump(jsonified_pred, json_file, ensure_ascii=False)
   print(pred)
