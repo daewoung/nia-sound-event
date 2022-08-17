@@ -14,14 +14,22 @@ from meta_utils import MetaCreator
 DEV = 'cuda'
 
 
-
 class Smoother(torch.nn.Module):
-  def __init__(self) -> None:
+  def __init__(self, device='cuda') -> None:
     super().__init__()
-    self.conv = torch.nn.Conv1d(1, 1, )
+    self.conv = torch.nn.Conv2d(1, 1, kernel_size=(501,1), padding_mode='reflect', padding=(250, 0))
+    self.conv.weight.data = torch.ones_like(self.conv.weight)
+    self.conv.requires_grad_ = False
+
+    self.device = device
+    self.to(device)
 
   def forward(self, pred):
-    return
+    with torch.no_grad():
+      smoothed_out = (self.conv(torch.Tensor(pred).to(self.device).unsqueeze(1))[:,0] / self.conv.kernel_size[0]).cpu().numpy()
+      cat_array = np.stack([pred, smoothed_out], axis=-1)
+      max_array = np.max(cat_array, axis=-1)
+      return max_array
 
 
 def quantize_prediction(pred, lens, threshold=0.1, shifted_index=0):
@@ -44,6 +52,8 @@ def quantize_prediction(pred, lens, threshold=0.1, shifted_index=0):
     else:
       event['offset'] = lens[batch_id] / 32000
 #       print(len(offset[0]), batch_id,  offset[0][j], tag_id,  offset[1][j] )
+    if onset_frame >= int(event['offset']*100):
+      continue
     event['confidence'] = max(pred[batch_id, onset_frame:int(event['offset']*100), tag_id])
   
     if batch_id == prev_batch_id:
@@ -72,7 +82,8 @@ def retain_one_event_per_tag(events):
   for tag in unique_tags:
     selected_events = [x for x in events if x['label']==tag]
     # TODO: find better score formular
-    scores = [x['confidence'] * (x['offset']-x['onset']) for x in selected_events]
+    # scores = [x['confidence'] * (x['offset']-x['onset']) for x in selected_events]
+    scores = [x['confidence'] for x in selected_events]
     max_id = scores.index(max(scores))
     outputs.append(selected_events[max_id])
   return outputs
@@ -120,16 +131,18 @@ if __name__ == "__main__":
   dataset = OnFlyAudio(args.path)
   meta_manager = MetaCreator(args.vocab_path)
 
-  data_loader = DataLoader(dataset, batch_size=10, collate_fn=pad_collate, pin_memory=True, num_workers=2, drop_last=False)
+  data_loader = DataLoader(dataset, batch_size=1, collate_fn=pad_collate, pin_memory=True, num_workers=2, drop_last=False)
   sed = SoundEventDetection(checkpoint_path=None, device='cuda')
+  smoother = Smoother()
   pred = []
 
   for i, batch in tqdm(enumerate(data_loader)):
     audio, lens = batch
     framewise_output = sed.inference(audio)
+    smoothed_output = smoother(framewise_output)
 
-    pred += quantize_prediction(framewise_output, lens, shifted_index= i * data_loader.batch_size, threshold=args.threshold)
-    break
+    pred += quantize_prediction(smoothed_output, lens, shifted_index= i * data_loader.batch_size, threshold=args.threshold)
+
   jsonified_pred = jsonify(pred, dataset, meta_manager)
   with open(f"prediction_threshold{str(args.threshold)}.json", "w") as json_file:
     json.dump(jsonified_pred, json_file, ensure_ascii=False)

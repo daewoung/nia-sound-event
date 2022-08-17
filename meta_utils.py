@@ -4,6 +4,7 @@ from copy import copy
 from docx.api import Document
 import soundfile as sf
 import librosa
+import numpy as np
 
 class MetaCreator:
   def __init__(self, vocab_path):
@@ -105,13 +106,7 @@ class MetaCreator:
     return table_dict
 
 
-  def get_audio_features(self, soundfile:sf.SoundFile):
-    y = soundfile.read()
-    y = y.mean(1)
-    spec_centroid = librosa.feature.spectral_centroid(y = y, sr=soundfile.samplerate)
-    print(spec_centroid)
 
-    return
 
   def get_class_name_and_title(self, wav_path):
     category_idx = int(wav_path.stem.split('-')[2]) - 1
@@ -133,3 +128,27 @@ class MetaCreator:
       print(f"Error in MP3 bit_rate: {mp3_path} is {mp3_info['bit_rate']}")
     return float(mp3_info["duration"])
   '''
+
+
+class AudioFeatureExtractor:
+  def __init__(self):
+    pass 
+
+  def get_audio_features(self, y:np.ndarray, sr:int):
+    spec_centroid = self.get_mean_and_std_of_audio_feature(y, sr, librosa.feature.spectral_centroid)
+    
+
+    return 
+
+  def get_mean_and_std_of_audio_feature(self, y, sr, audio_feature):
+    audio_features = audio_feature(y = y, sr = sr)
+    return {'mean': np.mean(audio_features) , 'std':np.std(audio_features) }
+
+  def read_soundfile(self, soundfile:sf.SoundFile):
+    y = soundfile.read()
+    y = y.mean(1)
+    return y, soundfile.samplerate
+
+  def call(self, soundfile:sf.SoundFile):
+    y, sr = self.read_soundfile()
+
