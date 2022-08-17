@@ -33,6 +33,17 @@ class Smoother(torch.nn.Module):
 
 
 def quantize_prediction(pred, lens, threshold=0.1, shifted_index=0):
+  '''
+  pred = 모델 출력
+  lens = 배치 내 샘플의 길이. Bathify 할 때 pad를 하면서 뒤에 묵음이 추가됨. 이 부분을 제거
+
+
+  출력:
+   list of list of dictionary
+   바깥 list의 길이는 배치의 샘플 수.
+   안쪽 list 각각의 길이는 각 샘플의 이벤트 길이
+  
+  '''
   assert pred.ndim == 3
   th_pred = (pred > threshold).astype(int)
   th_pred = np.concatenate([np.zeros([th_pred.shape[0], 1, th_pred.shape[2]]), th_pred], axis=1) # add initial step
@@ -91,21 +102,22 @@ def retain_one_event_per_tag(events):
 
 def jsonify(event_labels, dataset, meta_manager:MetaCreator):
   '''
-  event_labels (list of dict):
+  event_labels (list of list of dict):
     each item has {'data_id': int, 'label': str, 'onset': float, 'offset': float}
 
-  dataset (AudioSet)
+  dataset (NeutuneSet)
   
   '''
-  json_list = []
+  json_list = [] # list of dictionary. Each dictionary item is annotation/data-path to a single data sample
 
   for piece_event in event_labels:
+    # piece_event는 list of dict
     event_id = piece_event[0]['data_id']
-    sample_path = str(dataset.wav_list[event_id].relative_to(dataset.path))
+    sample_path = str(dataset.wav_list[event_id].relative_to(dataset.path)) # dataset path 안에서 wav sample의 상대 경로
     sample_path = '/data/local-files/?d=nia_dataset/'+sample_path
 
     annotations =[{'id': 1,
-                    'result': [{
+                    'result': [{ #"value"의 key는 label-studio에서 인식되는 key들이라 변경하면 안됨
                                 "value":{"start":event['onset'],"end":event['offset'],"labels":[event['label']],"score":float(event["confidence"])},
                                 "from_name":"label",
                                 "to_name":"audio",
@@ -119,7 +131,7 @@ def jsonify(event_labels, dataset, meta_manager:MetaCreator):
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser("sed_inference")
-  parser.add_argument('--path', type=str, default='/home/teo/label-studio_files/nia_dataset/1cycle',
+  parser.add_argument('--path', type=str, default='/home/teo/label-studio_files/nia_dataset/',
                       help='directory path to the dataset')
   parser.add_argument('--vocab_path', type=str, default='vocab.json',
                       help='directory path to the dataset')
@@ -132,13 +144,17 @@ if __name__ == "__main__":
   meta_manager = MetaCreator(args.vocab_path)
 
   data_loader = DataLoader(dataset, batch_size=1, collate_fn=pad_collate, pin_memory=True, num_workers=2, drop_last=False)
+
+  # load panns model
   sed = SoundEventDetection(checkpoint_path=None, device='cuda')
+
   smoother = Smoother()
   pred = []
 
   for i, batch in tqdm(enumerate(data_loader)):
     audio, lens = batch
     framewise_output = sed.inference(audio)
+    # framewise_output.shape = (batch_size, seq_len, num_tags), where seq_len is the length of the audio in 10ms step
     smoothed_output = smoother(framewise_output)
 
     pred += quantize_prediction(smoothed_output, lens, shifted_index= i * data_loader.batch_size, threshold=args.threshold)
