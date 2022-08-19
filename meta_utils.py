@@ -7,13 +7,14 @@ import librosa
 import numpy as np
 import pandas as pd
 
+from collections import defaultdict
+
 class MetaCreator:
   def __init__(self, vocab_path):
     with open(vocab_path, 'r') as f:
       self.vocab = json.load(f)
     self.error_list = []
-    # self.error_dict = {'docx_format_problem': [],
-    #                    'docx_missing: []}
+    self.error_dict = defaultdict(list)
 
   def get_recording_type(self, wav_path):
     if '폴리' in wav_path:
@@ -39,6 +40,7 @@ class MetaCreator:
 
   def add_error(self, wav_path, error_str):
     self.error_list.append({'file': wav_path.name, 'error': error_str})
+    self.error_dict[error_str].append(wav_path.name)
 
   def read_docx(self, wav_path):
     '''
