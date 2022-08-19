@@ -12,6 +12,8 @@ class MetaCreator:
     with open(vocab_path, 'r') as f:
       self.vocab = json.load(f)
     self.error_list = []
+    # self.error_dict = {'docx_format_problem': [],
+    #                    'docx_missing: []}
 
   def get_recording_type(self, wav_path):
     if '폴리' in wav_path:
