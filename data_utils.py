@@ -54,7 +54,7 @@ class PreProcAudio(NeutuneSet):
       audio = audio.mean(0)
       if sr != self.sr:
         audio = torchaudio.functional.resample(audio, sr, self.sr)
-      category_index = int(pt_path.stem.split('-')[2]) - 1
+      category_index = int(pt_path.stem.split('-')[3]) - 1
       data_dict = {'audio': audio, 'label':category_index}
       if isinstance(vocab, list):
         data_dict['label-str']: vocab[category_index]

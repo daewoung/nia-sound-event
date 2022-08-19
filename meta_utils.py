@@ -5,6 +5,7 @@ from docx.api import Document
 import soundfile as sf
 import librosa
 import numpy as np
+import pandas as pd
 
 class MetaCreator:
   def __init__(self, vocab_path):
@@ -22,7 +23,7 @@ class MetaCreator:
 
   def check_name_is_wrong(self, wav_path):
     name = wav_path.stem
-    high, middle, fine = [int(x) for x in name.split('-')[:3]]
+    high, middle, fine = [int(x) for x in name.split('-')[1:4]]
     voc = self.vocab[fine-1]
     assert voc["소분류_번호"] == fine
     if high != voc['대분류_번호']:
@@ -49,7 +50,7 @@ class MetaCreator:
   def create_meta_for_wav(self, wav_path):
     if isinstance(wav_path, str):
       wav_path = Path(wav_path)
-    category_idx = int(wav_path.stem.split('-')[2]) - 1
+    category_idx = get_categorical_idx_from_fp(wav_path)
     
     # try:
     #   mp3_dur = self.check_mp3_format(wav_path)
@@ -59,7 +60,7 @@ class MetaCreator:
 
     if self.check_name_is_wrong(wav_path):
       # print(f"Name is wrong for {wav_path}")
-      self.error_list.append(wav_path, "Category is wrong")
+      self.add_error(wav_path, "Category is wrong")
     meta = copy(self.vocab[category_idx])
     meta['녹음 방식'] = self.get_recording_type(str(wav_path))
 
@@ -82,18 +83,32 @@ class MetaCreator:
       self.add_error(wav_path, f"Sampling rate is {meta['샘플링 레이트']}")
 
     meta['길이'] = ob.frames / ob.samplerate
-    if True: #if it is field recording
-      docx_path = wav_path.parent.parent / 'metadata' / wav_path.with_suffix('.docx').name
-      if docx_path.exists():
-        try:
-          detailed_meta = self.read_table_from_docx(docx_path)
-          if meta['녹음 방식'] == "필드 레코딩":
-            meta["필드 레코딩 메타"] = detailed_meta
-          meta["제목"] = detailed_meta["제목"]
-        except Exception as e:
-          self.add_error(wav_path, f"Error occured while handling the corresponding docx")
-      else:
-        self.add_error(wav_path, "Meta docx does not exist")
+
+    docx_path = wav_path.parent.parent / 'metadata' / wav_path.with_suffix('.docx').name
+    excel_path = docx_path.with_suffix('.xlsx')
+    if excel_path.exists():
+      try:
+        detailed_meta = pd.read_excel(excel_path, index_col=0)
+        if meta['녹음 방식'] == "필드 레코딩":
+          meta["필드 레코딩 메타"] = detailed_meta
+        detailed_meta = detailed_meta.T
+        meta["제목"] = detailed_meta.pop("제목")
+        detailed_meta = detailed_meta.T
+      except Exception as e:
+        self.add_error(wav_path, f"Error occured while handling the corresponding xlsx")
+    elif docx_path.exists():
+      try:
+        detailed_meta = self.read_table_from_docx(docx_path)
+        if meta['녹음 방식'] == "필드 레코딩":
+          meta["필드 레코딩 메타"] = detailed_meta
+        if '제목' in detailed_meta:
+          pd.DataFrame(detailed_meta, index=['']).T.to_excel(docx_path.with_suffix('.xlsx'))
+          print('excel created', excel_path)
+        meta["제목"] = detailed_meta.pop("제목")
+      except Exception as e:
+        self.add_error(wav_path, f"Error occured while handling the corresponding docx")
+    else:
+      self.add_error(wav_path, "Meta docx does not exist")
 
     # self.get_audio_features(ob)
     return meta
@@ -109,7 +124,7 @@ class MetaCreator:
 
 
   def get_class_name_and_title(self, wav_path):
-    category_idx = int(wav_path.stem.split('-')[2]) - 1
+    category_idx = get_categorical_idx_from_fp(wav_path)
     class_name =  self.vocab[category_idx]['소분류']
     try:
       title = self.read_docx(wav_path)['제목']
@@ -128,6 +143,11 @@ class MetaCreator:
       print(f"Error in MP3 bit_rate: {mp3_path} is {mp3_info['bit_rate']}")
     return float(mp3_info["duration"])
   '''
+
+def get_categorical_idx_from_fp(wav_path):
+  path = Path(wav_path)
+  category_idx = int(path.stem.split('-')[3]) - 1
+  return category_idx
 
 
 class AudioFeatureExtractor:
