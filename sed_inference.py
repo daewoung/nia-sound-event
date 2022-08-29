@@ -113,8 +113,10 @@ def jsonify(event_labels, dataset, meta_manager:MetaCreator):
   for piece_event in event_labels:
     # piece_event는 list of dict
     event_id = piece_event[0]['data_id']
-    sample_path = str(dataset.wav_list[event_id].relative_to(dataset.path)) # dataset path 안에서 wav sample의 상대 경로
-    sample_path = '/data/local-files/?d=nia_dataset/'+sample_path
+    sample_path = dataset.wav_list[event_id].relative_to(dataset.path) # dataset path 안에서 wav sample의 상대 경로
+    sample_path = sample_path.parent.parent / 'mp3' / (sample_path.stem + '.mp3')
+    sample_path = '/data/local-files/?d=nia_dataset/' + str(sample_path)
+    # sample_path = '/data/local-files/nia_dataset/'+sample_path
 
     annotations =[{'id': 1,
                     'result': [{ #"value"의 key는 label-studio에서 인식되는 key들이라 변경하면 안됨
@@ -137,13 +139,15 @@ if __name__ == "__main__":
                       help='directory path to the dataset')
   parser.add_argument('--threshold', type=float, default=0.1,
                       help='sound event detection threshold value')
+  parser.add_argument('--batch_size', type=int, default=16,
+                      help='sound event detection threshold value')
 
   args = parser.parse_args()
 
   dataset = OnFlyAudio(args.path)
   meta_manager = MetaCreator(args.vocab_path)
 
-  data_loader = DataLoader(dataset, batch_size=1, collate_fn=pad_collate, pin_memory=True, num_workers=2, drop_last=False)
+  data_loader = DataLoader(dataset, batch_size=args.batch_size, collate_fn=pad_collate, pin_memory=True, num_workers=2, drop_last=False)
 
   # load panns model
   sed = SoundEventDetection(checkpoint_path=None, device='cuda')
