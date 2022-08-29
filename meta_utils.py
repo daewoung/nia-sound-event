@@ -6,12 +6,15 @@ import soundfile as sf
 import librosa
 import numpy as np
 import pandas as pd
+from math import isnan
 
 class MetaCreator:
-  def __init__(self, vocab_path):
+  def __init__(self, vocab_path, dataset_dir = None):
     with open(vocab_path, 'r') as f:
       self.vocab = json.load(f)
     self.error_list = []
+    self.dataset_dir =dataset_dir
+    self.audio_feature_extractor = AudioFeatureExtractor()
     # self.error_dict = {'docx_format_problem': [],
     #                    'docx_missing: []}
 
@@ -145,6 +148,11 @@ class MetaCreator:
           else:
             meta["상세 정보"]["기후 등 환경 조건"] = detailed_dict["기후/환경 조건"]
           meta["상세 정보"]["기타 특이사항"] = detailed_dict["기타 특이사항"]
+
+        for key in meta['상세 정보'].keys():
+          if isinstance(meta['상세 정보'][key], float) and isnan(meta['상세 정보'][key]):
+            meta['상세 정보'][key] = '없음'
+
       except Exception as e:
         self.add_error(wav_path, f"Error occured while handling the corresponding xlsx: {e}")
 
@@ -181,6 +189,48 @@ class MetaCreator:
       title = ''
 
     return f"{class_name}: {title}"
+
+  def __call__(self, label, save=False):
+    audio_path = Path(label['data']['audio'])
+    if 'r-1-1-2-3 허진만' in audio_path.stem:
+      audio_path = audio_path.parent / 'r-1-1-2-3-허진만.wav'
+    wav_path = audio_path.parent.parent / 'wav' / audio_path.with_suffix('.wav').name
+    audio_path_in_container = self.dataset_dir / wav_path.relative_to('/data/local-files/?d=data_v4')
+    json_path = audio_path_in_container.parent.parent / 'metadata' / audio_path.with_suffix('.json').name
+
+    meta = self.create_meta_for_wav(audio_path_in_container)
+
+    out = {}
+    out['분류 정보'] = {}
+    out['분류 정보']['소분류'] = meta['소분류']
+    out['분류 정보']['중분류'] = meta['중분류']
+    out['분류 정보']['대분류'] = meta['대분류']
+    out['분류 정보']['소분류 번호'] = meta['소분류_번호']
+    out['분류 정보']['중분류 번호'] = meta['중분류_번호']
+    out['분류 정보']['대분류 번호'] = meta['대분류_번호']
+
+    out['파일 정보'] = {}
+    out['파일 정보']['파일 이름'] = audio_path.name
+    out['파일 정보']['샘플링 레이트'] = meta['샘플링 레이트']
+    out['파일 정보']['채널 수'] = meta['채널 수']
+    out['파일 정보']['Bit Depth'] = meta['Bit_depth']
+    out['파일 정보']['길이'] = meta['길이']
+
+    out['오디오 이벤트 태그'] = [x['value']['labels'][0] for x in label['annotations'][0]['result']]
+    out['오디오 음향 특성'] = self.audio_feature_extractor(audio_path_in_container)
+    
+    out['녹음 상세 정보'] = {}
+    out['녹음 상세 정보']['제목'] = meta['제목']
+    for key in meta['상세 정보'].keys():
+      out['녹음 상세 정보'][key] = meta['상세 정보'][key]
+
+    if save:
+      with open(json_path, 'w') as f:
+        json.dump(out, f, indent=4, ensure_ascii=False)
+
+    return out
+
+
   
   '''
   def check_mp3_format(self, wav_path):
@@ -234,5 +284,7 @@ class AudioFeatureExtractor:
     return y, soundfile.samplerate
 
   def __call__(self, soundfile:sf.SoundFile):
+    if isinstance(soundfile, str) or isinstance(soundfile, Path):
+      soundfile =  sf.SoundFile(soundfile)
     y, sr = self.read_soundfile(soundfile)
     return self.get_audio_features(y, sr)
