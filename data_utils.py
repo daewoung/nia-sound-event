@@ -9,6 +9,7 @@ class NeutuneSet:
   def __init__(self, path, sr=32000) -> None:
     self.path = Path(path)
     self.wav_list = sorted(list(self.path.rglob('*.wav')))
+    self.mp3_list = sorted(list(self.path.rglob('*.mp3')))
     self.sr = sr
 
   def __len__(self):

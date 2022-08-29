@@ -1,0 +1,639 @@
+<View>
+  <Audio name="audio" value="$audio" hotkey="space"/>
+  <Text name="p1" value="$text"/>
+  <Filter name="filter" toName="label" hotkey="shift+f" minlength="0" placeholder="Filter"/>
+  <Labels name="label" toName="audio" zoom="true" hotkey="ctrl+enter">
+    <Label value="인간 소리" background="#8B4513"/>
+    <Label value="인성" background="#8B4513"/>
+    <Label value="발화" background="#8B4513"/>
+    <Label value="남성 발화" background="#8B4513"/>
+    <Label value="여성 발화" background="#8B4513"/>
+    <Label value="아이 발화" background="#8B4513"/>
+    <Label value="대화" background="#8B4513"/>
+    <Label value="나레이션, 독백" background="#8B4513"/>
+    <Label value="재잘거림, 옹알이" background="#8B4513"/>
+    <Label value="합성 음성" background="#8B4513"/>
+    <Label value="외침" background="#8B4513"/>
+    <Label value="우렁찬 고함" background="#8B4513"/>
+    <Label value="함성" background="#8B4513"/>
+    <Label value="고함" background="#8B4513"/>
+    <Label value="함성(전쟁)" background="#8B4513"/>
+    <Label value="함성(아이)" background="#8B4513"/>
+    <Label value="비명" background="#8B4513"/>
+    <Label value="속삭임" background="#8B4513"/>
+    <Label value="웃음" background="#8B4513"/>
+    <Label value="아기의 웃음" background="#8B4513"/>
+    <Label value="킥킥(웃음)" background="#8B4513"/>
+    <Label value="낄낄(웃음)" background="#8B4513"/>
+    <Label value="배꼽 잡는 웃음" background="#8B4513"/>
+    <Label value="빙그레(웃음)" background="#8B4513"/>
+    <Label value="울음 소리" background="#8B4513"/>
+    <Label value="아기 울음 소리" background="#8B4513"/>
+    <Label value="흐느낌" background="#8B4513"/>
+    <Label value="신음" background="#8B4513"/>
+    <Label value="한숨" background="#8B4513"/>
+    <Label value="노래 소리" background="#8B4513"/>
+    <Label value="성가대" background="#8B4513"/>
+    <Label value="요들송" background="#8B4513"/>
+    <Label value="구호" background="#8B4513"/>
+    <Label value="만트라" background="#8B4513"/>
+    <Label value="남성 노래" background="#8B4513"/>
+    <Label value="여성 노래" background="#8B4513"/>
+    <Label value="어린이 노래" background="#8B4513"/>
+    <Label value="합성 노래" background="#8B4513"/>
+    <Label value="랩" background="#8B4513"/>
+    <Label value="허밍" background="#8B4513"/>
+    <Label value="앓는 소리" background="#8B4513"/>
+    <Label value="끙끙(인간)" background="#8B4513"/>
+    <Label value="하품" background="#8B4513"/>
+    <Label value="휘파람" background="#EEE8AA"/>
+    <Label value="늑대 휘파람" background="#EEE8AA"/>
+    <Label value="호흡기 소리" background="#3CB371"/>
+    <Label value="숨소리" background="#3CB371"/>
+    <Label value="쌕쌕거림" background="#3CB371"/>
+    <Label value="코골이" background="#3CB371"/>
+    <Label value="헉 하는 소리" background="#3CB371"/>
+    <Label value="헐떡임" background="#3CB371"/>
+    <Label value="콧방귀" background="#3CB371"/>
+    <Label value="기침" background="#3CB371"/>
+    <Label value="헛기침" background="#3CB371"/>
+    <Label value="재채기" background="#3CB371"/>
+    <Label value="킁킁(코)" background="#3CB371"/>
+    <Label value="인간의 움직임" background="#FFFACD"/>
+    <Label value="달리기" background="#FFFACD"/>
+    <Label value="발을 질질 끌며 걷기" background="#FFFACD"/>
+    <Label value="발소리" background="#FFFACD"/>
+    <Label value="소화" background="#FFA07A"/>
+    <Label value="씹기" background="#FFA07A"/>
+    <Label value="물기" background="#FFA07A"/>
+    <Label value="가글" background="#FFA07A"/>
+    <Label value="꼬르륵" background="#FFA07A"/>
+    <Label value="트림" background="#FFA07A"/>
+    <Label value="딸꾹질" background="#FFA07A"/>
+    <Label value="방귀" background="#FFA07A"/>
+    <Label value="손" background="#D2691E"/>
+    <Label value="손가락 스냅" background="#D2691E"/>
+    <Label value="박수" background="#D2691E"/>
+    <Label value="심장 박동" background="#FF69B4"/>
+    <Label value="심장 이상음" background="#FF69B4"/>
+    <Label value="귀음향방사" background="#E6E6FA"/>
+    <Label value="이명" background="#E6E6FA"/>
+    <Label value="인간 그룹 행동" background="#E6E6FA"/>
+    <Label value="환호" background="#E6E6FA"/>
+    <Label value="박수 갈채" background="#E6E6FA"/>
+    <Label value="재잘거림" background="#E6E6FA"/>
+    <Label value="군중" background="#E6E6FA"/>
+    <Label value="웅성웅성" background="#E6E6FA"/>
+    <Label value="야유" background="#E6E6FA"/>
+    <Label value="아이들 노는 소리" background="#E6E6FA"/>
+    <Label value="동물" background="#FFEBCD"/>
+    <Label value="애완 동물" background="#FFEBCD"/>
+    <Label value="개" background="#FFEBCD"/>
+    <Label value="짖는 소리" background="#FFEBCD"/>
+    <Label value="깽깽(개)" background="#FFEBCD"/>
+    <Label value="하울" background="#FFEBCD"/>
+    <Label value="멍멍" background="#FFEBCD"/>
+    <Label value="으르렁" background="#FFEBCD"/>
+    <Label value="낑낑(개)" background="#FFEBCD"/>
+    <Label value="크르렁" background="#FFEBCD"/>
+    <Label value="고양이" background="#FFEBCD"/>
+    <Label value="가르랑(고양이)" background="#FFEBCD"/>
+    <Label value="야옹" background="#FFEBCD"/>
+    <Label value="쉬익(고양이), 야유(사람)" background="#FFEBCD"/>
+    <Label value="고양이 의사소통" background="#FFEBCD"/>
+    <Label value="캬아악(고양이)" background="#FFEBCD"/>
+    <Label value="가축" background="#FF8C00"/>
+    <Label value="말" background="#FF8C00"/>
+    <Label value="말발굽 소리" background="#FF8C00"/>
+    <Label value="히힝(말)" background="#FF8C00"/>
+    <Label value="콧김(말)" background="#FF8C00"/>
+    <Label value="말의 울음 소리" background="#FF8C00"/>
+    <Label value="당나귀" background="#FF8C00"/>
+    <Label value="소" background="#FF8C00"/>
+    <Label value="음매(소)" background="#FF8C00"/>
+    <Label value="워낭" background="#FF8C00"/>
+    <Label value="야크" background="#FF8C00"/>
+    <Label value="돼지" background="#FF8C00"/>
+    <Label value="꿀꿀(돼지)" background="#FF8C00"/>
+    <Label value="염소" background="#FF8C00"/>
+    <Label value="매애(양, 염소)" background="#FF8C00"/>
+    <Label value="양" background="#FF8C00"/>
+    <Label value="조류" background="#FF8C00"/>
+    <Label value="닭" background="#FF8C00"/>
+    <Label value="꼬꼬" background="#FF8C00"/>
+    <Label value="꼬끼오" background="#FF8C00"/>
+    <Label value="칠면조" background="#FF8C00"/>
+    <Label value="고르륵고르륵(칠면조)" background="#FF8C00"/>
+    <Label value="오리" background="#FF8C00"/>
+    <Label value="꽥꽥(오리)" background="#FF8C00"/>
+    <Label value="거위" background="#FF8C00"/>
+    <Label value="끼루룩끼루룩(거위)" background="#FF8C00"/>
+    <Label value="야생 동물" background="#B22222"/>
+    <Label value="으르렁(고양이과)" background="#B22222"/>
+    <Label value="포효(고양이과)" background="#B22222"/>
+    <Label value="새" background="#B22222"/>
+    <Label value="새소리" background="#B22222"/>
+    <Label value="짹짹(새)" background="#B22222"/>
+    <Label value="깍깍(새)" background="#B22222"/>
+    <Label value="비둘기" background="#B22222"/>
+    <Label value="구구" background="#B22222"/>
+    <Label value="까마귀" background="#B22222"/>
+    <Label value="까악" background="#B22222"/>
+    <Label value="올빼미" background="#B22222"/>
+    <Label value="부엉부엉" background="#B22222"/>
+    <Label value="갈매기" background="#B22222"/>
+    <Label value="날갯짓" background="#B22222"/>
+    <Label value="개과" background="#B22222"/>
+    <Label value="설치류" background="#B22222"/>
+    <Label value="생쥐" background="#B22222"/>
+    <Label value="다람쥐" background="#B22222"/>
+    <Label value="타닥타닥(동물)" background="#B22222"/>
+    <Label value="곤충" background="#B22222"/>
+    <Label value="귀뚜라미" background="#B22222"/>
+    <Label value="모기" background="#B22222"/>
+    <Label value="파리" background="#B22222"/>
+    <Label value="윙윙(곤충)" background="#B22222"/>
+    <Label value="벌" background="#B22222"/>
+    <Label value="개구리" background="#B22222"/>
+    <Label value="개골개골" background="#B22222"/>
+    <Label value="뱀" background="#B22222"/>
+    <Label value="달가닥" background="#B22222"/>
+    <Label value="고래 의사소통" background="#B22222"/>
+    <Label value="음악" background="#00FF00"/>
+    <Label value="악기" background="#00FF00"/>
+    <Label value="발현 악기" background="#00FF00"/>
+    <Label value="기타" background="#00FF00"/>
+    <Label value="전자 기타" background="#00FF00"/>
+    <Label value="베이스 기타" background="#00FF00"/>
+    <Label value="어쿠스틱 기타" background="#00FF00"/>
+    <Label value="기타 슬라이딩" background="#00FF00"/>
+    <Label value="태핑(기타)" background="#00FF00"/>
+    <Label value="연주(기타)" background="#00FF00"/>
+    <Label value="밴조" background="#00FF00"/>
+    <Label value="시타르" background="#00FF00"/>
+    <Label value="만돌린" background="#00FF00"/>
+    <Label value="치터" background="#00FF00"/>
+    <Label value="우쿨렐레" background="#00FF00"/>
+    <Label value="키보드(악기)" background="#00FF00"/>
+    <Label value="피아노" background="#00FF00"/>
+    <Label value="전기 피아노" background="#00FF00"/>
+    <Label value="클라비넷" background="#00FF00"/>
+    <Label value="로즈 피아노" background="#00FF00"/>
+    <Label value="오르간" background="#00FF00"/>
+    <Label value="전자 오르간" background="#00FF00"/>
+    <Label value="하몬드 오르간" background="#00FF00"/>
+    <Label value="신디사이저" background="#00FF00"/>
+    <Label value="샘플러" background="#00FF00"/>
+    <Label value="멜로트론" background="#00FF00"/>
+    <Label value="하프시 코드" background="#00FF00"/>
+    <Label value="타악기" background="#00FF00"/>
+    <Label value="드럼 키트" background="#00FF00"/>
+    <Label value="드럼 머신" background="#00FF00"/>
+    <Label value="드럼" background="#00FF00"/>
+    <Label value="스네어 드럼" background="#00FF00"/>
+    <Label value="림샷" background="#00FF00"/>
+    <Label value="드럼 롤" background="#00FF00"/>
+    <Label value="베이스 드럼" background="#00FF00"/>
+    <Label value="팀파니" background="#00FF00"/>
+    <Label value="타블라" background="#00FF00"/>
+    <Label value="심벌즈" background="#00FF00"/>
+    <Label value="하이햇" background="#00FF00"/>
+    <Label value="크래시 심벌" background="#00FF00"/>
+    <Label value="우드 블럭" background="#00FF00"/>
+    <Label value="탬버린" background="#00FF00"/>
+    <Label value="딸랑이 (악기)" background="#00FF00"/>
+    <Label value="마라카" background="#00FF00"/>
+    <Label value="징" background="#00FF00"/>
+    <Label value="튜블라 벨" background="#00FF00"/>
+    <Label value="말렛 타악기" background="#00FF00"/>
+    <Label value="마림바, 자일로폰" background="#00FF00"/>
+    <Label value="글로켄슈필" background="#00FF00"/>
+    <Label value="비브라폰" background="#00FF00"/>
+    <Label value="스틸팬" background="#00FF00"/>
+    <Label value="오케스트라" background="#00FF00"/>
+    <Label value="금관 악기" background="#00FF00"/>
+    <Label value="프렌치 호른" background="#00FF00"/>
+    <Label value="트럼펫" background="#00FF00"/>
+    <Label value="트롬본" background="#00FF00"/>
+    <Label value="코넷" background="#00FF00"/>
+    <Label value="나팔" background="#00FF00"/>
+    <Label value="찰현 악기" background="#00FF00"/>
+    <Label value="현악기" background="#00FF00"/>
+    <Label value="바이올린" background="#00FF00"/>
+    <Label value="피치카토" background="#00FF00"/>
+    <Label value="첼로" background="#00FF00"/>
+    <Label value="콘트라베이스" background="#00FF00"/>
+    <Label value="목관 악기" background="#00FF00"/>
+    <Label value="플루트" background="#00FF00"/>
+    <Label value="색소폰" background="#00FF00"/>
+    <Label value="알토 색소폰" background="#00FF00"/>
+    <Label value="소프라노 색소폰" background="#00FF00"/>
+    <Label value="클라리넷" background="#00FF00"/>
+    <Label value="오보에" background="#00FF00"/>
+    <Label value="바순" background="#00FF00"/>
+    <Label value="하프" background="#00FF00"/>
+    <Label value="종" background="#00FF00"/>
+    <Label value="교회 종" background="#FFFF00"/>
+    <Label value="징글 벨" background="#FFFF00"/>
+    <Label value="자전거 벨" background="#FFFF00"/>
+    <Label value="소리 굽쇠" background="#00FF00"/>
+    <Label value="차임" background="#00FF00"/>
+    <Label value="윈드 차임" background="#00FF00"/>
+    <Label value="캄파놀로지(종)" background="#00FF00"/>
+    <Label value="하모니카" background="#00FF00"/>
+    <Label value="아코디언" background="#00FF00"/>
+    <Label value="백파이프" background="#00FF00"/>
+    <Label value="디제리두" background="#00FF00"/>
+    <Label value="각적" background="#00FF00"/>
+    <Label value="테레민" background="#00FF00"/>
+    <Label value="싱잉볼" background="#00FF00"/>
+    <Label value="음악 앙상블" background="#00FF00"/>
+    <Label value="베이스 (악기)" background="#00FF00"/>
+    <Label value="스크래칭(DJ)" background="#00FF00"/>
+    <Label value="음악 장르" background="#A52A2A"/>
+    <Label value="대중 음악" background="#A52A2A"/>
+    <Label value="힙합" background="#A52A2A"/>
+    <Label value="그라임" background="#A52A2A"/>
+    <Label value="트랩" background="#A52A2A"/>
+    <Label value="비트박스" background="#A52A2A"/>
+    <Label value="락" background="#A52A2A"/>
+    <Label value="헤비메탈" background="#A52A2A"/>
+    <Label value="펑크 락" background="#A52A2A"/>
+    <Label value="그런지" background="#A52A2A"/>
+    <Label value="프로그레시브 락" background="#A52A2A"/>
+    <Label value="락앤롤" background="#A52A2A"/>
+    <Label value="사이키델릭 락" background="#A52A2A"/>
+    <Label value="리듬 앤 블루스" background="#A52A2A"/>
+    <Label value="소울" background="#A52A2A"/>
+    <Label value="레게" background="#A52A2A"/>
+    <Label value="덥" background="#A52A2A"/>
+    <Label value="컨트리" background="#A52A2A"/>
+    <Label value="스윙" background="#A52A2A"/>
+    <Label value="블루 그래스" background="#A52A2A"/>
+    <Label value="펑크" background="#A52A2A"/>
+    <Label value="민속 음악" background="#A52A2A"/>
+    <Label value="중동 음악" background="#A52A2A"/>
+    <Label value="재즈" background="#A52A2A"/>
+    <Label value="디스코" background="#A52A2A"/>
+    <Label value="클래식" background="#A52A2A"/>
+    <Label value="오페라" background="#A52A2A"/>
+    <Label value="일렉트로닉 음악" background="#A52A2A"/>
+    <Label value="하우스 음악" background="#A52A2A"/>
+    <Label value="테크노" background="#A52A2A"/>
+    <Label value="덥스텝" background="#A52A2A"/>
+    <Label value="일렉트로(음악)" background="#A52A2A"/>
+    <Label value="드럼 앤 베이스" background="#A52A2A"/>
+    <Label value="올드스쿨 정글" background="#A52A2A"/>
+    <Label value="일렉트로니카" background="#A52A2A"/>
+    <Label value="EDM" background="#A52A2A"/>
+    <Label value="환경 음악" background="#A52A2A"/>
+    <Label value="드론 음악" background="#A52A2A"/>
+    <Label value="트랜스 음악" background="#A52A2A"/>
+    <Label value="노이즈 음악" background="#A52A2A"/>
+    <Label value="영국 가라지" background="#A52A2A"/>
+    <Label value="라틴 아메리카 음악" background="#A52A2A"/>
+    <Label value="쿰비아" background="#A52A2A"/>
+    <Label value="살사" background="#A52A2A"/>
+    <Label value="소카" background="#A52A2A"/>
+    <Label value="쿠두로" background="#A52A2A"/>
+    <Label value="펑크 카리오카" background="#A52A2A"/>
+    <Label value="플라멩코" background="#A52A2A"/>
+    <Label value="블루스" background="#A52A2A"/>
+    <Label value="어린이를 위한 음악" background="#A52A2A"/>
+    <Label value="뉴에이지 음악" background="#A52A2A"/>
+    <Label value="보컬 음악" background="#A52A2A"/>
+    <Label value="아카펠라" background="#A52A2A"/>
+    <Label value="아프리카 음악" background="#A52A2A"/>
+    <Label value="아프로비트" background="#A52A2A"/>
+    <Label value="카이토" background="#A52A2A"/>
+    <Label value="기독교 음악" background="#A52A2A"/>
+    <Label value="복음 성가" background="#A52A2A"/>
+    <Label value="아시아 음악" background="#A52A2A"/>
+    <Label value="카르나틱 음악" background="#A52A2A"/>
+    <Label value="발리우드 음악" background="#A52A2A"/>
+    <Label value="스카" background="#A52A2A"/>
+    <Label value="전통 음악" background="#A52A2A"/>
+    <Label value="독립 음악" background="#A52A2A"/>
+    <Label value="음악적 개념" background="#228B22"/>
+    <Label value="노래" background="#228B22"/>
+    <Label value="멜로디" background="#228B22"/>
+    <Label value="음표" background="#228B22"/>
+    <Label value="비트" background="#228B22"/>
+    <Label value="드럼 비트" background="#228B22"/>
+    <Label value="화음" background="#228B22"/>
+    <Label value="화성" background="#228B22"/>
+    <Label value="베이스 라인" background="#228B22"/>
+    <Label value="루프" background="#228B22"/>
+    <Label value="드론(음악 효과)" background="#228B22"/>
+    <Label value="음악 역할" background="#0000FF"/>
+    <Label value="배경 음악" background="#0000FF"/>
+    <Label value="테마 음악" background="#0000FF"/>
+    <Label value="징글 (음악)" background="#0000FF"/>
+    <Label value="사운드 트랙 음악" background="#0000FF"/>
+    <Label value="자장가" background="#0000FF"/>
+    <Label value="비디오 게임 음악" background="#0000FF"/>
+    <Label value="크리스마스 음악" background="#0000FF"/>
+    <Label value="댄스 음악" background="#0000FF"/>
+    <Label value="결혼 음악" background="#0000FF"/>
+    <Label value="생일 음악" background="#0000FF"/>
+    <Label value="음악 분위기" background="#FFA500"/>
+    <Label value="행복한 음악" background="#FFA500"/>
+    <Label value="재미있는 음악" background="#FFA500"/>
+    <Label value="슬픈 음악" background="#FFA500"/>
+    <Label value="부드러운 음악" background="#FFA500"/>
+    <Label value="흥미진진한 음악" background="#FFA500"/>
+    <Label value="화나는 음악" background="#FFA500"/>
+    <Label value="무서운 음악" background="#FFA500"/>
+    <Label value="자연 소리" background="#808080"/>
+    <Label value="바람" background="#808080"/>
+    <Label value="윙윙(바람)" background="#808080"/>
+    <Label value="바스락(나뭇잎)" background="#808080"/>
+    <Label value="바람소음(마이크)" background="#808080"/>
+    <Label value="폭풍" background="#000080"/>
+    <Label value="천둥" background="#000080"/>
+    <Label value="물" background="#00BFFF"/>
+    <Label value="비" background="#00BFFF"/>
+    <Label value="빗방울" background="#00BFFF"/>
+    <Label value="부딪히는 빗소리" background="#00BFFF"/>
+    <Label value="개울" background="#00BFFF"/>
+    <Label value="폭포" background="#00BFFF"/>
+    <Label value="바다" background="#00BFFF"/>
+    <Label value="파도" background="#00BFFF"/>
+    <Label value="증기" background="#00BFFF"/>
+    <Label value="콸콸" background="#00BFFF"/>
+    <Label value="불" background="#FF0000"/>
+    <Label value="탁탁(불)" background="#FF0000"/>
+    <Label value="들불" background="#FF0000"/>
+    <Label value="사물의 소리" background="#8FBC8B"/>
+    <Label value="차량" background="#8FBC8B"/>
+    <Label value="보트" background="#8FBC8B"/>
+    <Label value="범선" background="#8FBC8B"/>
+    <Label value="카누" background="#8FBC8B"/>
+    <Label value="모터 보트" background="#8FBC8B"/>
+    <Label value="배" background="#8FBC8B"/>
+    <Label value="자동차(오프로드)" background="#8FBC8B"/>
+    <Label value="자동차" background="#8FBC8B"/>
+    <Label value="자동차 경적" background="#8FBC8B"/>
+    <Label value="빵(경적)" background="#8FBC8B"/>
+    <Label value="자동차 경보" background="#8FBC8B"/>
+    <Label value="전동 창문(차)" background="#8FBC8B"/>
+    <Label value="미끄러짐(차)" background="#8FBC8B"/>
+    <Label value="타이어 마찰음" background="#8FBC8B"/>
+    <Label value="지나가는 차" background="#8FBC8B"/>
+    <Label value="자동차 경주" background="#8FBC8B"/>
+    <Label value="트럭" background="#8FBC8B"/>
+    <Label value="에어 브레이크" background="#8FBC8B"/>
+    <Label value="트럭 경적" background="#8FBC8B"/>
+    <Label value="후진 경고음" background="#8FBC8B"/>
+    <Label value="아이스크림 트럭" background="#8FBC8B"/>
+    <Label value="버스" background="#8FBC8B"/>
+    <Label value="응급 차량" background="#8FBC8B"/>
+    <Label value="경찰차(사이렌)" background="#8FBC8B"/>
+    <Label value="구급차(사이렌)" background="#8FBC8B"/>
+    <Label value="소방차(사이렌)" background="#8FBC8B"/>
+    <Label value="오토바이" background="#8FBC8B"/>
+    <Label value="교통 소음" background="#8FBC8B"/>
+    <Label value="철도 운송" background="#8FBC8B"/>
+    <Label value="기차" background="#8FBC8B"/>
+    <Label value="기차 신호" background="#8FBC8B"/>
+    <Label value="기차 경적" background="#8FBC8B"/>
+    <Label value="화물 기차" background="#8FBC8B"/>
+    <Label value="삐걱(기차)" background="#8FBC8B"/>
+    <Label value="지하철" background="#8FBC8B"/>
+    <Label value="항공기" background="#8FBC8B"/>
+    <Label value="항공기 엔진" background="#8FBC8B"/>
+    <Label value="제트 엔진" background="#8FBC8B"/>
+    <Label value="프로펠러" background="#8FBC8B"/>
+    <Label value="헬리콥터" background="#8FBC8B"/>
+    <Label value="고정 날개 항공기" background="#8FBC8B"/>
+    <Label value="무동력 차량" background="#8FBC8B"/>
+    <Label value="자전거" background="#8FBC8B"/>
+    <Label value="스케이트 보드" background="#8FBC8B"/>
+    <Label value="엔진" background="#DB7093"/>
+    <Label value="라이트 엔진(고주파)" background="#DB7093"/>
+    <Label value="치과용 드릴" background="#DB7093"/>
+    <Label value="잔디 깎는 기계" background="#DB7093"/>
+    <Label value="전기 톱" background="#DB7093"/>
+    <Label value="미디엄 엔진(중간 주파수)" background="#DB7093"/>
+    <Label value="헤비 엔진(저주파)" background="#DB7093"/>
+    <Label value="엔진 노킹" background="#DB7093"/>
+    <Label value="엔진 시동" background="#DB7093"/>
+    <Label value="공회전" background="#DB7093"/>
+    <Label value="가속" background="#DB7093"/>
+    <Label value="집(실내)" background="#87CEEB"/>
+    <Label value="문" background="#87CEEB"/>
+    <Label value="초인종" background="#87CEEB"/>
+    <Label value="딩동" background="#87CEEB"/>
+    <Label value="미닫이 문" background="#87CEEB"/>
+    <Label value="쾅(문)" background="#87CEEB"/>
+    <Label value="노크" background="#87CEEB"/>
+    <Label value="톡톡" background="#87CEEB"/>
+    <Label value="끽" background="#87CEEB"/>
+    <Label value="천장 여닫는 소리" background="#87CEEB"/>
+    <Label value="서랍 여닫는 소리" background="#87CEEB"/>
+    <Label value="식기류" background="#87CEEB"/>
+    <Label value="금속 식기류" background="#87CEEB"/>
+    <Label value="썰기" background="#87CEEB"/>
+    <Label value="튀김" background="#87CEEB"/>
+    <Label value="전자 레인지" background="#87CEEB"/>
+    <Label value="블렌더" background="#87CEEB"/>
+    <Label value="주전자 호루라기" background="#87CEEB"/>
+    <Label value="수도꼭지" background="#87CEEB"/>
+    <Label value="싱크대" background="#87CEEB"/>
+    <Label value="욕조" background="#87CEEB"/>
+    <Label value="헤어 드라이어" background="#87CEEB"/>
+    <Label value="변기 내림" background="#87CEEB"/>
+    <Label value="칫솔" background="#87CEEB"/>
+    <Label value="전동 칫솔" background="#87CEEB"/>
+    <Label value="진공 청소기" background="#87CEEB"/>
+    <Label value="지퍼" background="#87CEEB"/>
+    <Label value="벨크로" background="#87CEEB"/>
+    <Label value="열쇠" background="#87CEEB"/>
+    <Label value="동전" background="#87CEEB"/>
+    <Label value="포장 테이프" background="#87CEEB"/>
+    <Label value="가위" background="#87CEEB"/>
+    <Label value="전기 면도기" background="#87CEEB"/>
+    <Label value="카드 셔플" background="#87CEEB"/>
+    <Label value="타자" background="#87CEEB"/>
+    <Label value="타자기" background="#87CEEB"/>
+    <Label value="컴퓨터 키보드" background="#87CEEB"/>
+    <Label value="글쓰기" background="#87CEEB"/>
+    <Label value="경보" background="#FF1493"/>
+    <Label value="전화" background="#FF1493"/>
+    <Label value="전화 벨소리" background="#FF1493"/>
+    <Label value="벨소리" background="#FF1493"/>
+    <Label value="핸드폰 진동" background="#FF1493"/>
+    <Label value="전화 다이얼링, DTMF" background="#FF1493"/>
+    <Label value="다이얼 톤" background="#FF1493"/>
+    <Label value="통화 중 신호" background="#FF1493"/>
+    <Label value="알람 시계" background="#FF1493"/>
+    <Label value="사이렌" background="#FF1493"/>
+    <Label value="민방위 사이렌" background="#FF1493"/>
+    <Label value="버저" background="#FF1493"/>
+    <Label value="연기 감지기, 연기 경보" background="#FF1493"/>
+    <Label value="화재 경보" background="#FF1493"/>
+    <Label value="무적" background="#FF1493"/>
+    <Label value="호루라기" background="#FF1493"/>
+    <Label value="기적" background="#FF1493"/>
+    <Label value="기계장치" background="#2F4F4F"/>
+    <Label value="래칫, 폴" background="#2F4F4F"/>
+    <Label value="시계" background="#2F4F4F"/>
+    <Label value="틱" background="#2F4F4F"/>
+    <Label value="째깍(시계)" background="#2F4F4F"/>
+    <Label value="기어" background="#2F4F4F"/>
+    <Label value="풀리스" background="#2F4F4F"/>
+    <Label value="재봉틀" background="#2F4F4F"/>
+    <Label value="선풍기" background="#2F4F4F"/>
+    <Label value="에어컨" background="#2F4F4F"/>
+    <Label value="금전 등록기" background="#2F4F4F"/>
+    <Label value="인쇄기" background="#2F4F4F"/>
+    <Label value="카메라" background="#2F4F4F"/>
+    <Label value="단일 렌즈 반사 카메라" background="#2F4F4F"/>
+    <Label value="도구" background="#DDA0DD"/>
+    <Label value="망치" background="#DDA0DD"/>
+    <Label value="잭 해머" background="#DDA0DD"/>
+    <Label value="톱질" background="#DDA0DD"/>
+    <Label value="줄질" background="#DDA0DD"/>
+    <Label value="사포질" background="#DDA0DD"/>
+    <Label value="전동 공구" background="#DDA0DD"/>
+    <Label value="드릴" background="#DDA0DD"/>
+    <Label value="폭발" background="#DCDCDC"/>
+    <Label value="총격" background="#DCDCDC"/>
+    <Label value="기관총" background="#DCDCDC"/>
+    <Label value="연속 사격" background="#DCDCDC"/>
+    <Label value="포병 사격" background="#DCDCDC"/>
+    <Label value="장난감 총" background="#DCDCDC"/>
+    <Label value="불꽃놀이" background="#DCDCDC"/>
+    <Label value="폭죽" background="#DCDCDC"/>
+    <Label value="파열" background="#DCDCDC"/>
+    <Label value="분화" background="#DCDCDC"/>
+    <Label value="쾅" background="#DCDCDC"/>
+    <Label value="음속 폭음" background="#DCDCDC"/>
+    <Label value="목재" background="#A0522D"/>
+    <Label value="썰다, 토막내다" background="#A0522D"/>
+    <Label value="파편" background="#A0522D"/>
+    <Label value="금이 감" background="#A0522D"/>
+    <Label value="부러짐, 찰칵" background="#A0522D"/>
+    <Label value="유리" background="#B0E0E6"/>
+    <Label value="쨍그랑, 짤랑" background="#B0E0E6"/>
+    <Label value="산산조각" background="#B0E0E6"/>
+    <Label value="액체" background="#ADFF2F"/>
+    <Label value="스플래시, 뿌리" background="#ADFF2F"/>
+    <Label value="철벅(액체)" background="#ADFF2F"/>
+    <Label value="뭉개기(액체)" background="#ADFF2F"/>
+    <Label value="물방울" background="#ADFF2F"/>
+    <Label value="붓기" background="#ADFF2F"/>
+    <Label value="주르륵(액체)" background="#ADFF2F"/>
+    <Label value="분출" background="#ADFF2F"/>
+    <Label value="채우기(액체)" background="#ADFF2F"/>
+    <Label value="스프레이" background="#ADFF2F"/>
+    <Label value="펌프(액체)" background="#ADFF2F"/>
+    <Label value="휘젓기" background="#ADFF2F"/>
+    <Label value="끓음" background="#ADFF2F"/>
+    <Label value="기타 소스" background="#FF6347"/>
+    <Label value="소나(수중 음파 탐지)" background="#FF6347"/>
+    <Label value="덕콜(사냥도구)" background="#FF6347"/>
+    <Label value="화살" background="#FF6347"/>
+    <Label value="쉭(공기)" background="#FF6347"/>
+    <Label value="쿵(치는 소리)" background="#FF6347"/>
+    <Label value="탁" background="#FF6347"/>
+    <Label value="꽝" background="#FF6347"/>
+    <Label value="뒤뚱" background="#FF6347"/>
+    <Label value="음향 장비" background="#FF6347"/>
+    <Label value="마이크로폰" background="#FF6347"/>
+    <Label value="전자 튜너" background="#FF6347"/>
+    <Label value="기타 앰프" background="#FF6347"/>
+    <Label value="이펙터" background="#FF6347"/>
+    <Label value="코러스 효과" background="#FF6347"/>
+    <Label value="특정 충격 사운드" background="#B0C4DE"/>
+    <Label value="농구 바운스" background="#B0C4DE"/>
+    <Label value="모호한 소리" background="#B0C4DE"/>
+    <Label value="일반적인 충격 소리" background="#9932CC"/>
+    <Label value="탕" background="#9932CC"/>
+    <Label value="철썩 침" background="#9932CC"/>
+    <Label value="후려침" background="#9932CC"/>
+    <Label value="스매시, 충돌" background="#9932CC"/>
+    <Label value="파괴" background="#9932CC"/>
+    <Label value="튀어 오름" background="#9932CC"/>
+    <Label value="채찍" background="#9932CC"/>
+    <Label value="플랩" background="#9932CC"/>
+    <Label value="표면 접촉" background="#008080"/>
+    <Label value="할큄" background="#008080"/>
+    <Label value="긁기" background="#008080"/>
+    <Label value="문지르기" background="#008080"/>
+    <Label value="회전" background="#008080"/>
+    <Label value="갈기" background="#008080"/>
+    <Label value="껍데기" background="#C71585"/>
+    <Label value="으스러뜨리기" background="#C71585"/>
+    <Label value="구겨짐" background="#C71585"/>
+    <Label value="찢기" background="#C71585"/>
+    <Label value="의성어" background="#FFD700"/>
+    <Label value="짧은 톤" background="#FFD700"/>
+    <Label value="경고음" background="#FFD700"/>
+    <Label value="탱, 땡" background="#FFD700"/>
+    <Label value="땡땡" background="#FFD700"/>
+    <Label value="쨍그랑" background="#FFD700"/>
+    <Label value="팅, 윙" background="#FFD700"/>
+    <Label value="끼익" background="#FFD700"/>
+    <Label value="꽥, 빽" background="#FFD700"/>
+    <Label value="삐걱거림" background="#FFD700"/>
+    <Label value="바스락거림" background="#FFD700"/>
+    <Label value="윙윙(기계)" background="#FFD700"/>
+    <Label value="달가닥거림" background="#FFD700"/>
+    <Label value="지글지글" background="#FFD700"/>
+    <Label value="찰칵" background="#FFD700"/>
+    <Label value="짤깍짤깍" background="#FFD700"/>
+    <Label value="우르릉" background="#FFD700"/>
+    <Label value="요란히 울림" background="#FFD700"/>
+    <Label value="퐁당" background="#FFD700"/>
+    <Label value="딸랑임" background="#FFD700"/>
+    <Label value="거품 빠짐" background="#FFD700"/>
+    <Label value="뻐끔뻐끔(연기)" background="#FFD700"/>
+    <Label value="웅웅" background="#FFD700"/>
+    <Label value="쌩쌩" background="#FFD700"/>
+    <Label value="통통" background="#FFD700"/>
+    <Label value="으스러짐" background="#FFD700"/>
+    <Label value="고요" background="#9370DB"/>
+    <Label value="불명확한 소리" background="#98FB98"/>
+    <Label value="사인파" background="#98FB98"/>
+    <Label value="배음" background="#98FB98"/>
+    <Label value="치프톤" background="#98FB98"/>
+    <Label value="음향 효과" background="#98FB98"/>
+    <Label value="펄스" background="#98FB98"/>
+    <Label value="초저음" background="#98FB98"/>
+    <Label value="저주파" background="#98FB98"/>
+    <Label value="공명" background="#98FB98"/>
+    <Label value="채널, 환경 및 배경" background="#BDB76B"/>
+    <Label value="음향 환경" background="#BDB76B"/>
+    <Label value="내부, 작은 방" background="#BDB76B"/>
+    <Label value="내부, 큰 방 또는 홀" background="#BDB76B"/>
+    <Label value="내부, 공공 장소" background="#BDB76B"/>
+    <Label value="외부, 도시 또는 인공" background="#BDB76B"/>
+    <Label value="외부, 농촌 또는 자연" background="#BDB76B"/>
+    <Label value="반향" background="#BDB76B"/>
+    <Label value="에코" background="#BDB76B"/>
+    <Label value="소음" background="#66CDAA"/>
+    <Label value="배경 소음" background="#66CDAA"/>
+    <Label value="환경 소음" background="#66CDAA"/>
+    <Label value="히스 노이즈" background="#66CDAA"/>
+    <Label value="전기 잡음" background="#66CDAA"/>
+    <Label value="낮은 전기 잡음" background="#66CDAA"/>
+    <Label value="왜곡음" background="#66CDAA"/>
+    <Label value="측음" background="#66CDAA"/>
+    <Label value="불협 화음" background="#66CDAA"/>
+    <Label value="백색 잡음" background="#66CDAA"/>
+    <Label value="핑크 소음" background="#66CDAA"/>
+    <Label value="고동" background="#66CDAA"/>
+    <Label value="진동" background="#66CDAA"/>
+    <Label value="소리 재생" background="#6B8E23"/>
+    <Label value="텔레비전" background="#6B8E23"/>
+    <Label value="라디오" background="#6B8E23"/>
+    <Label value="확성기" background="#6B8E23"/>
+    <Label value="헤드폰" background="#6B8E23"/>
+    <Label value="녹음" background="#6B8E23"/>
+    <Label value="현장 녹음" background="#6B8E23"/>
+    <Label value="축음기" background="#6B8E23"/>
+    <Label value="CD" background="#6B8E23"/>
+    <Label value="MP3" background="#6B8E23"/>
+  </Labels>
+</View>
