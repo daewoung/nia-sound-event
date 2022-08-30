@@ -115,7 +115,7 @@ def jsonify(event_labels, dataset, meta_manager:MetaCreator):
     event_id = piece_event[0]['data_id']
     #sample_path = dataset.wav_list[event_id].relative_to(dataset.path) # dataset path 안에서 wav sample의 상대 경로
     sample_path = dataset.mp3_list[event_id].relative_to(dataset.path) # mp3 sample의 상대 경로
-    sample_path = '/data/local-files/?d=data_v4/01/' + str(sample_path)
+    sample_path = '/data/local-files/?d=data_v4/02/' + str(sample_path)
 
     annotations =[{'id': 1,
                     'result': [{ #"value"의 key는 label-studio에서 인식되는 key들이라 변경하면 안됨
