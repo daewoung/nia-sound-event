@@ -132,7 +132,7 @@ def jsonify(event_labels, dataset, meta_manager:MetaCreator):
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser("sed_inference")
-  parser.add_argument('--path', type=str, default='/home/clay/label_studio_files/data_v4/01/',
+  parser.add_argument('--path', type=str, default='/home/clay/label_studio_files/data_v4/02/',
                       help='directory path to the dataset')
   parser.add_argument('--vocab_path', type=str, default='vocab.json',
                       help='directory path to the dataset')
@@ -144,6 +144,7 @@ if __name__ == "__main__":
   args = parser.parse_args()
 
   dataset = OnFlyAudio(args.path)
+  dataset.only_correct_meta()
   meta_manager = MetaCreator(args.vocab_path)
 
   data_loader = DataLoader(dataset, batch_size=args.batch_size, collate_fn=pad_collate, pin_memory=True, num_workers=2, drop_last=False)

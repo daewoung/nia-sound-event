@@ -3,7 +3,7 @@ import torch
 import torchaudio
 from pathlib import Path
 from tqdm.auto import tqdm
-
+from meta_utils import MetaCreator
 
 class NeutuneSet:
   def __init__(self, path, sr=32000) -> None:
@@ -11,7 +11,7 @@ class NeutuneSet:
     self.wav_list = sorted(list(self.path.rglob('*.wav')))
     self.mp3_list = sorted(list(self.path.rglob('*.mp3')))
     self.sr = sr
-
+  
   def __len__(self):
     return len(self.wav_list)
   
@@ -34,6 +34,20 @@ class OnFlyAudio(NeutuneSet):
     if sr != self.sr:
       audio = torchaudio.functional.resample(audio, sr, self.sr)
     return audio
+  
+  def only_correct_meta(self):
+    wav_list_correct_meta = []
+    
+    meta_creator = MetaCreator('/home/clay/userdata/nia-sound-event-1/vocab.json')
+    entire_meta = [meta_creator.create_meta_for_wav(wav) for wav in self.wav_list]
+    self.error_dict = meta_creator.error_dict
+    self.error_dict_list = [item for values in self.error_dict.values() for item in values]
+    
+    for wav in self.wav_list:
+      if wav.name not in self.error_dict_list:
+        wav_list_correct_meta.append(wav)
+    
+    self.wav_list = wav_list_correct_meta
 
 class PreProcAudio(NeutuneSet):
   def __init__(self, path, sr=32000, pre_process=False) -> None:
@@ -45,7 +59,7 @@ class PreProcAudio(NeutuneSet):
     '''
     Arguments:
       skip_exist (bool): Skip pre-processing for file which have a corersponding pt file
-      vocab (list, optional): index-to-category_name 
+      vocab (list, optional): index-to-category_wav 
     '''
     for wav_path in tqdm(self.wav_list):
       pt_path = wav_path.with_suffix('.pt')
