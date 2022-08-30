@@ -1,0 +1,5635 @@
+[
+  {
+    "id": 645,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 23.36,
+              "end": 24.0,
+              "labels": [
+                "카누"
+              ],
+              "score": 0.06941382586956024
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 29.12,
+              "end": 29.44,
+              "labels": [
+                "헬리콥터"
+              ],
+              "score": 0.050708409398794174
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 3.52,
+              "end": 3.84,
+              "labels": [
+                "음악"
+              ],
+              "score": 0.05824694037437439
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 14.7,
+              "end": 19.89,
+              "labels": [
+                "동물"
+              ],
+              "score": 0.3712861239910126
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 18.88,
+              "end": 20.16,
+              "labels": [
+                "자동차"
+              ],
+              "score": 0.17746444046497345
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 28.01,
+              "end": 45.0,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.5704969167709351
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 37.12,
+              "end": 38.08,
+              "labels": [
+                "트럭"
+              ],
+              "score": 0.07654289901256561
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 20.8,
+              "end": 21.76,
+              "labels": [
+                "프로펠러"
+              ],
+              "score": 0.06199297681450844
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 11.84,
+              "end": 12.8,
+              "labels": [
+                "외부, 농촌 또는 자연"
+              ],
+              "score": 0.10669316351413727
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 19.2,
+              "end": 21.76,
+              "labels": [
+                "외부, 도시 또는 인공"
+              ],
+              "score": 0.09748588502407074
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 24.96,
+              "end": 27.2,
+              "labels": [
+                "새"
+              ],
+              "score": 0.11909882724285126
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 20.48,
+              "end": 21.76,
+              "labels": [
+                "항공기"
+              ],
+              "score": 0.13956278562545776
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 30.4,
+              "end": 31.04,
+              "labels": [
+                "철도 운송"
+              ],
+              "score": 0.09317238628864288
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 14.66,
+              "end": 19.73,
+              "labels": [
+                "야생 동물"
+              ],
+              "score": 0.38459593057632446
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 5.73,
+              "end": 9.56,
+              "labels": [
+                "포효(고양이과)"
+              ],
+              "score": 0.26875370740890503
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 25.28,
+              "end": 26.88,
+              "labels": [
+                "짹짹(새)"
+              ],
+              "score": 0.08706784248352051
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 37.44,
+              "end": 38.72,
+              "labels": [
+                "오토바이"
+              ],
+              "score": 0.08382362127304077
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 30.4,
+              "end": 31.04,
+              "labels": [
+                "화물 기차"
+              ],
+              "score": 0.08891192078590393
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 23.36,
+              "end": 24.32,
+              "labels": [
+                "보트"
+              ],
+              "score": 0.12937669456005096
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 20.48,
+              "end": 21.76,
+              "labels": [
+                "고정 날개 항공기"
+              ],
+              "score": 0.1339198350906372
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 30.4,
+              "end": 31.04,
+              "labels": [
+                "기차"
+              ],
+              "score": 0.12357079237699509
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 24.96,
+              "end": 26.88,
+              "labels": [
+                "새소리"
+              ],
+              "score": 0.09166498482227325
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 15.3,
+              "end": 18.95,
+              "labels": [
+                "으르렁(고양이과)"
+              ],
+              "score": 0.22042684257030487
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 20.8,
+              "end": 21.44,
+              "labels": [
+                "항공기 엔진"
+              ],
+              "score": 0.0766180083155632
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 19.2,
+              "end": 19.84,
+              "labels": [
+                "자동차(오프로드)"
+              ],
+              "score": 0.0559135340154171
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 5.44,
+              "end": 6.08,
+              "labels": [
+                "환경 소음"
+              ],
+              "score": 0.061306510120630264
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-52-3-김지호.mp3",
+      "text": "판타지 중세 성: 잠자는 숲속의 드레곤"
+    }
+  },
+  {
+    "id": 1195,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 9.28,
+              "end": 11.2,
+              "labels": [
+                "소방차(사이렌)"
+              ],
+              "score": 0.11323467642068863
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 7.67,
+              "end": 15.36,
+              "labels": [
+                "응급 차량"
+              ],
+              "score": 0.25914183259010315
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 20.76,
+              "end": 26.08,
+              "labels": [
+                "발화"
+              ],
+              "score": 0.23890425264835358
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 70.4,
+              "end": 71.68,
+              "labels": [
+                "아이스크림 트럭"
+              ],
+              "score": 0.1691422462463379
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 78.72,
+              "end": 80.0,
+              "labels": [
+                "교통 소음"
+              ],
+              "score": 0.08754143863916397
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 96.0,
+              "end": 96.96,
+              "labels": [
+                "버스"
+              ],
+              "score": 0.06147131696343422
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 2.56,
+              "end": 3.52,
+              "labels": [
+                "구급차(사이렌)"
+              ],
+              "score": 0.10354232043027878
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 80.05,
+              "end": 84.77,
+              "labels": [
+                "지하철"
+              ],
+              "score": 0.1859503984451294
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 70.4,
+              "end": 72.0,
+              "labels": [
+                "음악"
+              ],
+              "score": 0.19644637405872345
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 66.17,
+              "end": 69.12,
+              "labels": [
+                "자동차"
+              ],
+              "score": 0.09870094060897827
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 100.0,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.5272409915924072
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 83.52,
+              "end": 96.63,
+              "labels": [
+                "트럭"
+              ],
+              "score": 0.169004425406456
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 94.08,
+              "end": 95.36,
+              "labels": [
+                "후진 경고음"
+              ],
+              "score": 0.17379343509674072
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 41.6,
+              "end": 42.56,
+              "labels": [
+                "외부, 도시 또는 인공"
+              ],
+              "score": 0.05858011171221733
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 79.24,
+              "end": 85.43,
+              "labels": [
+                "철도 운송"
+              ],
+              "score": 0.23503974080085754
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 79.37,
+              "end": 85.36,
+              "labels": [
+                "화물 기차"
+              ],
+              "score": 0.2240445762872696
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 75.09,
+              "end": 86.72,
+              "labels": [
+                "기차"
+              ],
+              "score": 0.28455913066864014
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 9.6,
+              "end": 11.2,
+              "labels": [
+                "사이렌"
+              ],
+              "score": 0.12677623331546783
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 79.04,
+              "end": 79.68,
+              "labels": [
+                "자동차(오프로드)"
+              ],
+              "score": 0.05714815855026245
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/r-1-1-5-6-김영운.mp3",
+      "text": "백화점: 청량리 롯데백화점 3층 무빙워크"
+    }
+  },
+  {
+    "id": 878,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 54.72,
+              "end": 56.0,
+              "labels": [
+                "삐걱(기차)"
+              ],
+              "score": 0.06536003202199936
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 59.84,
+              "end": 60.48,
+              "labels": [
+                "폭풍"
+              ],
+              "score": 0.05365382879972458
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 95.76,
+              "end": 100.0,
+              "labels": [
+                "발화"
+              ],
+              "score": 0.38922035694122314
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 65.28,
+              "end": 65.6,
+              "labels": [
+                "교통 소음"
+              ],
+              "score": 0.05260413512587547
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 43.8,
+              "end": 54.21,
+              "labels": [
+                "파도"
+              ],
+              "score": 0.3690456449985504
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 50.24,
+              "end": 50.88,
+              "labels": [
+                "범선"
+              ],
+              "score": 0.06760711222887039
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 75.78,
+              "end": 84.16,
+              "labels": [
+                "지하철"
+              ],
+              "score": 0.35903996229171753
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 21.12,
+              "end": 21.44,
+              "labels": [
+                "동물"
+              ],
+              "score": 0.050516095012426376
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 51.84,
+              "end": 52.8,
+              "labels": [
+                "바스락(나뭇잎)"
+              ],
+              "score": 0.05720425769686699
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 51.85,
+              "end": 58.44,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.2784309685230255
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 55.36,
+              "end": 56.32,
+              "labels": [
+                "짤깍짤깍"
+              ],
+              "score": 0.06806658953428268
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 43.93,
+              "end": 54.15,
+              "labels": [
+                "바다"
+              ],
+              "score": 0.3769721984863281
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 1.92,
+              "end": 3.2,
+              "labels": [
+                "외부, 농촌 또는 자연"
+              ],
+              "score": 0.06620745360851288
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 59.84,
+              "end": 60.48,
+              "labels": [
+                "천둥"
+              ],
+              "score": 0.054089270532131195
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 52.59,
+              "end": 58.14,
+              "labels": [
+                "철도 운송"
+              ],
+              "score": 0.3460685610771179
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 56.86,
+              "end": 77.65,
+              "labels": [
+                "핑크 소음"
+              ],
+              "score": 0.3197522759437561
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 52.59,
+              "end": 58.1,
+              "labels": [
+                "화물 기차"
+              ],
+              "score": 0.3375428318977356
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 48.29,
+              "end": 52.61,
+              "labels": [
+                "보트"
+              ],
+              "score": 0.1782444268465042
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 75.66,
+              "end": 84.16,
+              "labels": [
+                "기차"
+              ],
+              "score": 0.40046426653862
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 45.76,
+              "end": 54.13,
+              "labels": [
+                "바람"
+              ],
+              "score": 0.3051898181438446
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 46.76,
+              "end": 53.73,
+              "labels": [
+                "바람소음(마이크)"
+              ],
+              "score": 0.2840379774570465
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 49.92,
+              "end": 51.2,
+              "labels": [
+                "배"
+              ],
+              "score": 0.08426911383867264
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-53-4-조현진.mp3",
+      "text": "공항: 제 2터미널 에스컬레이터"
+    }
+  },
+  {
+    "id": 389,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 42.56,
+              "end": 45.0,
+              "labels": [
+                "팀파니"
+              ],
+              "score": 0.11686240881681442
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 17.6,
+              "end": 18.24,
+              "labels": [
+                "글로켄슈필"
+              ],
+              "score": 0.07345949858427048
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 2.76,
+              "end": 27.27,
+              "labels": [
+                "징"
+              ],
+              "score": 0.4326188862323761
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 17.92,
+              "end": 18.56,
+              "labels": [
+                "싱잉볼"
+              ],
+              "score": 0.08983636647462845
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 17.92,
+              "end": 18.24,
+              "labels": [
+                "타악기"
+              ],
+              "score": 0.054224852472543716
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 17.6,
+              "end": 18.24,
+              "labels": [
+                "말렛 타악기"
+              ],
+              "score": 0.0906308963894844
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 17.6,
+              "end": 18.24,
+              "labels": [
+                "마림바, 자일로폰"
+              ],
+              "score": 0.09160445630550385
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 17.6,
+              "end": 18.56,
+              "labels": [
+                "튜블라 벨"
+              ],
+              "score": 0.1318245232105255
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 17.92,
+              "end": 18.24,
+              "labels": [
+                "비브라폰"
+              ],
+              "score": 0.055374134331941605
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 27.52,
+              "end": 45.0,
+              "labels": [
+                "음악"
+              ],
+              "score": 0.3911430239677429
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 1.28,
+              "end": 3.2,
+              "labels": [
+                "분화"
+              ],
+              "score": 0.06994033604860306
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-50-8-조현진.mp3",
+      "text": "해저 도시: 하프 연주 소리 - 해저 도시"
+    }
+  },
+  {
+    "id": 37,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 5.76,
+              "end": 7.36,
+              "labels": [
+                "핑크 소음"
+              ],
+              "score": 0.08647187799215317
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 2.01,
+              "labels": [
+                "통화 중 신호"
+              ],
+              "score": 0.1505061388015747
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 8.96,
+              "end": 10.24,
+              "labels": [
+                "부딪히는 빗소리"
+              ],
+              "score": 0.09545547515153885
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 17.98,
+              "end": 22.05,
+              "labels": [
+                "비"
+              ],
+              "score": 0.1490698903799057
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 16.0,
+              "end": 16.64,
+              "labels": [
+                "전화 다이얼링, DTMF"
+              ],
+              "score": 0.06980127096176147
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 15.68,
+              "end": 16.96,
+              "labels": [
+                "다이얼 톤"
+              ],
+              "score": 0.2499525099992752
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 42.56,
+              "end": 42.88,
+              "labels": [
+                "바스락(나뭇잎)"
+              ],
+              "score": 0.05247146636247635
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 27.52,
+              "end": 27.84,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.05623392015695572
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 42.24,
+              "end": 44.16,
+              "labels": [
+                "외부, 농촌 또는 자연"
+              ],
+              "score": 0.0671306923031807
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 7.04,
+              "end": 8.96,
+              "labels": [
+                "파도"
+              ],
+              "score": 0.11885708570480347
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 9.28,
+              "end": 10.24,
+              "labels": [
+                "빗방울"
+              ],
+              "score": 0.06288672983646393
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 5.76,
+              "end": 11.33,
+              "labels": [
+                "개울"
+              ],
+              "score": 0.1611824333667755
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 15.68,
+              "end": 16.96,
+              "labels": [
+                "전화"
+              ],
+              "score": 0.18745215237140656
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 0.64,
+              "labels": [
+                "측음"
+              ],
+              "score": 0.05050420016050339
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 6.58,
+              "end": 9.33,
+              "labels": [
+                "바다"
+              ],
+              "score": 0.13459676504135132
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-49-2-어상진.mp3",
+      "text": "가상 업무 공간: 비 오는날 가상 업무 공간"
+    }
+  },
+  {
+    "id": 724,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 44.14,
+              "end": 45.0,
+              "labels": [
+                "동물"
+              ],
+              "score": 0.08530228585004807
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 29.05,
+              "end": 31.94,
+              "labels": [
+                "쾅"
+              ],
+              "score": 0.12244050949811935
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 9.62,
+              "end": 17.28,
+              "labels": [
+                "기계장치"
+              ],
+              "score": 0.1622713953256607
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 4.47,
+              "labels": [
+                "비둘기"
+              ],
+              "score": 0.49822840094566345
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 1.6,
+              "end": 2.56,
+              "labels": [
+                "새소리"
+              ],
+              "score": 0.12985534965991974
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 40.32,
+              "end": 40.64,
+              "labels": [
+                "으르렁(고양이과)"
+              ],
+              "score": 0.06774429231882095
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 1.28,
+              "end": 2.24,
+              "labels": [
+                "외부, 농촌 또는 자연"
+              ],
+              "score": 0.06588392704725266
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 34.88,
+              "end": 35.2,
+              "labels": [
+                "변기 내림"
+              ],
+              "score": 0.07103767991065979
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 4.56,
+              "labels": [
+                "새"
+              ],
+              "score": 0.6166675090789795
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 8.64,
+              "end": 9.6,
+              "labels": [
+                "연속 사격"
+              ],
+              "score": 0.07016687095165253
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 40.32,
+              "end": 40.96,
+              "labels": [
+                "야생 동물"
+              ],
+              "score": 0.07106033712625504
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 29.07,
+              "labels": [
+                "음악"
+              ],
+              "score": 0.3903158903121948
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 42.56,
+              "end": 43.52,
+              "labels": [
+                "포효(고양이과)"
+              ],
+              "score": 0.12580302357673645
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 1.28,
+              "end": 2.56,
+              "labels": [
+                "구구"
+              ],
+              "score": 0.1534421443939209
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 28.8,
+              "end": 30.72,
+              "labels": [
+                "분화"
+              ],
+              "score": 0.1315978318452835
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 34.88,
+              "end": 35.2,
+              "labels": [
+                "물"
+              ],
+              "score": 0.05850985646247864
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-52-6-어상진.mp3",
+      "text": "판타지 중세 성: 드레곤본거지로 출정"
+    }
+  },
+  {
+    "id": 150,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 9.77,
+              "end": 13.35,
+              "labels": [
+                "지하철"
+              ],
+              "score": 0.13445612788200378
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 8.92,
+              "end": 14.7,
+              "labels": [
+                "화물 기차"
+              ],
+              "score": 0.17871195077896118
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 21.44,
+              "end": 23.04,
+              "labels": [
+                "보트"
+              ],
+              "score": 0.1113656759262085
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 20.8,
+              "end": 21.44,
+              "labels": [
+                "자동차"
+              ],
+              "score": 0.07487937062978745
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 2.3,
+              "end": 15.25,
+              "labels": [
+                "기차"
+              ],
+              "score": 0.2600195109844208
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 21.76,
+              "end": 22.72,
+              "labels": [
+                "바람"
+              ],
+              "score": 0.08856122195720673
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 21.76,
+              "end": 22.72,
+              "labels": [
+                "바람소음(마이크)"
+              ],
+              "score": 0.07587616890668869
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 45.0,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.3830013871192932
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 2.56,
+              "end": 3.52,
+              "labels": [
+                "버스"
+              ],
+              "score": 0.06839654594659805
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 22.08,
+              "end": 22.4,
+              "labels": [
+                "파도"
+              ],
+              "score": 0.06621245294809341
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 8.77,
+              "end": 14.72,
+              "labels": [
+                "철도 운송"
+              ],
+              "score": 0.18340234458446503
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 21.76,
+              "end": 22.72,
+              "labels": [
+                "바다"
+              ],
+              "score": 0.06862220913171768
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-49-7-김동영.mp3",
+      "text": "가상 업무 공간: 가상의 에너지 발전소"
+    }
+  },
+  {
+    "id": 1261,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 48.96,
+              "end": 54.71,
+              "labels": [
+                "외부, 도시 또는 인공"
+              ],
+              "score": 0.0908752977848053
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 25.59,
+              "end": 30.56,
+              "labels": [
+                "동물"
+              ],
+              "score": 0.13123515248298645
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 65.86,
+              "end": 70.07,
+              "labels": [
+                "내부, 공공 장소"
+              ],
+              "score": 0.0917225107550621
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 56.0,
+              "end": 56.32,
+              "labels": [
+                "말"
+              ],
+              "score": 0.05095449462532997
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 60.48,
+              "end": 62.4,
+              "labels": [
+                "말발굽 소리"
+              ],
+              "score": 0.07414556294679642
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 50.86,
+              "end": 53.44,
+              "labels": [
+                "달리기"
+              ],
+              "score": 0.08889653533697128
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/r-1-1-5-9-김영운.mp3",
+      "text": "백화점: 광교 갤러리아 백화점 6층 아쿠아 가든"
+    }
+  },
+  {
+    "id": 643,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 0.0,
+              "end": 5.64,
+              "labels": [
+                "팀파니"
+              ],
+              "score": 0.32051941752433777
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 34.56,
+              "end": 36.48,
+              "labels": [
+                "외부, 도시 또는 인공"
+              ],
+              "score": 0.06770607084035873
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 8.96,
+              "end": 9.92,
+              "labels": [
+                "징"
+              ],
+              "score": 0.07522360980510712
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 12.37,
+              "end": 21.01,
+              "labels": [
+                "자동차"
+              ],
+              "score": 0.43117785453796387
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 12.13,
+              "end": 21.1,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.551540195941925
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 9.89,
+              "end": 45.0,
+              "labels": [
+                "우르릉"
+              ],
+              "score": 0.35409873723983765
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 36.51,
+              "end": 41.64,
+              "labels": [
+                "음악"
+              ],
+              "score": 0.1991426795721054
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 6.08,
+              "end": 7.04,
+              "labels": [
+                "무서운 음악"
+              ],
+              "score": 0.12475866824388504
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 34.24,
+              "end": 36.8,
+              "labels": [
+                "가속"
+              ],
+              "score": 0.07392777502536774
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-52-3-김원준.mp3",
+      "text": "판타지 중세 성: 깊은 지하 성안에 같혀있는 비스트"
+    }
+  },
+  {
+    "id": 41,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 38.4,
+              "end": 39.36,
+              "labels": [
+                "자동차"
+              ],
+              "score": 0.08528786152601242
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 7.68,
+              "end": 8.64,
+              "labels": [
+                "기계장치"
+              ],
+              "score": 0.05962727963924408
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 24.96,
+              "end": 42.22,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.26032519340515137
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 38.08,
+              "end": 39.36,
+              "labels": [
+                "열쇠"
+              ],
+              "score": 0.09621857106685638
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 41.6,
+              "end": 42.56,
+              "labels": [
+                "컴퓨터 키보드"
+              ],
+              "score": 0.07894587516784668
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 2.31,
+              "end": 5.76,
+              "labels": [
+                "우르릉"
+              ],
+              "score": 0.10011427849531174
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 19.14,
+              "end": 26.38,
+              "labels": [
+                "음악"
+              ],
+              "score": 0.4520869553089142
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 41.6,
+              "end": 42.56,
+              "labels": [
+                "타자"
+              ],
+              "score": 0.09491387754678726
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-49-2-이상화.mp3",
+      "text": "가상 업무 공간: 가상공간3"
+    }
+  },
+  {
+    "id": 592,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 0.0,
+              "end": 5.19,
+              "labels": [
+                "보트"
+              ],
+              "score": 0.20259983837604523
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 8.32,
+              "end": 9.28,
+              "labels": [
+                "폭풍"
+              ],
+              "score": 0.10790077596902847
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 7.93,
+              "end": 26.63,
+              "labels": [
+                "바람"
+              ],
+              "score": 0.22000335156917572
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 8.32,
+              "end": 8.96,
+              "labels": [
+                "비"
+              ],
+              "score": 0.09520753473043442
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 8.32,
+              "end": 9.28,
+              "labels": [
+                "천둥"
+              ],
+              "score": 0.13182316720485687
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 28.16,
+              "labels": [
+                "바람소음(마이크)"
+              ],
+              "score": 0.29625481367111206
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 5.64,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.13604742288589478
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 33.6,
+              "end": 33.92,
+              "labels": [
+                "외부, 농촌 또는 자연"
+              ],
+              "score": 0.05224955454468727
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 1.28,
+              "end": 2.88,
+              "labels": [
+                "파도"
+              ],
+              "score": 0.10906494408845901
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 1.28,
+              "end": 2.88,
+              "labels": [
+                "바다"
+              ],
+              "score": 0.12077023833990097
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 1.28,
+              "end": 2.88,
+              "labels": [
+                "배"
+              ],
+              "score": 0.09019643813371658
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 1.92,
+              "end": 3.2,
+              "labels": [
+                "범선"
+              ],
+              "score": 0.08296994864940643
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 39.04,
+              "end": 40.32,
+              "labels": [
+                "분화"
+              ],
+              "score": 0.07674430310726166
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-52-1-김양우.mp3",
+      "text": "하늘 도시: 하늘도시의 깃발이 펄럭이는 소리"
+    }
+  },
+  {
+    "id": 281,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 23.7,
+              "end": 28.79,
+              "labels": [
+                "올빼미"
+              ],
+              "score": 0.47932833433151245
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 18.56,
+              "end": 20.16,
+              "labels": [
+                "귀뚜라미"
+              ],
+              "score": 0.11452392488718033
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 1.19,
+              "end": 7.36,
+              "labels": [
+                "부엉부엉"
+              ],
+              "score": 0.7749372124671936
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 2.88,
+              "labels": [
+                "외부, 농촌 또는 자연"
+              ],
+              "score": 0.08213315159082413
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 16.78,
+              "end": 21.63,
+              "labels": [
+                "곤충"
+              ],
+              "score": 0.22188135981559753
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-50-4-김효종.mp3",
+      "text": "고대 문명 도시: 고대문명도시7"
+    }
+  },
+  {
+    "id": 96,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 26.36,
+              "end": 33.14,
+              "labels": [
+                "소나(수중 음파 탐지)"
+              ],
+              "score": 0.15636543929576874
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 3.2,
+              "end": 10.34,
+              "labels": [
+                "환경 음악"
+              ],
+              "score": 0.1257474571466446
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 8.96,
+              "end": 9.92,
+              "labels": [
+                "신디사이저"
+              ],
+              "score": 0.05592922121286392
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 1.92,
+              "end": 12.44,
+              "labels": [
+                "일렉트로닉 음악"
+              ],
+              "score": 0.11008461564779282
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-49-4-최용욱.mp3",
+      "text": "가상 업무 공간: 실험실1"
+    }
+  },
+  {
+    "id": 484,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 6.96,
+              "end": 8.64,
+              "labels": [
+                "자동차(오프로드)"
+              ],
+              "score": 0.08347367495298386
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 16.92,
+              "end": 42.88,
+              "labels": [
+                "외부, 도시 또는 인공"
+              ],
+              "score": 0.07982814311981201
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.32,
+              "end": 0.64,
+              "labels": [
+                "보트"
+              ],
+              "score": 0.05076282471418381
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 12.36,
+              "labels": [
+                "자동차"
+              ],
+              "score": 0.20541717112064362
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 3.52,
+              "end": 4.48,
+              "labels": [
+                "바람"
+              ],
+              "score": 0.07141279429197311
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 18.95,
+              "end": 25.84,
+              "labels": [
+                "현장 녹음"
+              ],
+              "score": 0.08469809591770172
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 12.64,
+              "labels": [
+                "교통 소음"
+              ],
+              "score": 0.18712854385375977
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 0.64,
+              "labels": [
+                "바람소음(마이크)"
+              ],
+              "score": 0.08460624516010284
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 45.0,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.4609300494194031
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 0.64,
+              "labels": [
+                "파도"
+              ],
+              "score": 0.07416225969791412
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 0.64,
+              "labels": [
+                "바다"
+              ],
+              "score": 0.06753969192504883
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-51-4-이주헌.mp3",
+      "text": "하늘 도시: 하늘 도시 고속도로"
+    }
+  },
+  {
+    "id": 132,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 28.16,
+              "end": 28.48,
+              "labels": [
+                "삐걱(기차)"
+              ],
+              "score": 0.06536290049552917
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 13.44,
+              "end": 13.76,
+              "labels": [
+                "전동 공구"
+              ],
+              "score": 0.05376226454973221
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 40.64,
+              "end": 41.6,
+              "labels": [
+                "발화"
+              ],
+              "score": 0.14947591722011566
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 22.08,
+              "end": 22.4,
+              "labels": [
+                "덥스텝"
+              ],
+              "score": 0.056342918425798416
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 22.08,
+              "end": 22.4,
+              "labels": [
+                "테크노"
+              ],
+              "score": 0.06255917251110077
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 13.12,
+              "end": 14.08,
+              "labels": [
+                "도구"
+              ],
+              "score": 0.12315235286951065
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 35.84,
+              "end": 37.44,
+              "labels": [
+                "지하철"
+              ],
+              "score": 0.07937093079090118
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 6.08,
+              "end": 6.4,
+              "labels": [
+                "엔진"
+              ],
+              "score": 0.05515497922897339
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 11.73,
+              "end": 14.52,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.16170282661914825
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 39.36,
+              "end": 39.68,
+              "labels": [
+                "짤깍짤깍"
+              ],
+              "score": 0.08133338391780853
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 18.24,
+              "end": 19.2,
+              "labels": [
+                "래칫, 폴"
+              ],
+              "score": 0.20402570068836212
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.64,
+              "end": 1.28,
+              "labels": [
+                "삐걱거림"
+              ],
+              "score": 0.09579600393772125
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 16.49,
+              "end": 20.55,
+              "labels": [
+                "기계장치"
+              ],
+              "score": 0.29246392846107483
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 42.88,
+              "end": 43.52,
+              "labels": [
+                "인쇄기"
+              ],
+              "score": 0.07305087149143219
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 33.6,
+              "end": 34.24,
+              "labels": [
+                "재봉틀"
+              ],
+              "score": 0.06869512796401978
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 21.76,
+              "end": 22.72,
+              "labels": [
+                "일렉트로닉 음악"
+              ],
+              "score": 0.20116153359413147
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 35.84,
+              "end": 41.34,
+              "labels": [
+                "철도 운송"
+              ],
+              "score": 0.2844800055027008
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 35.84,
+              "end": 40.35,
+              "labels": [
+                "화물 기차"
+              ],
+              "score": 0.27207642793655396
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 35.08,
+              "end": 41.81,
+              "labels": [
+                "기차"
+              ],
+              "score": 0.3280179798603058
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 2.87,
+              "end": 12.66,
+              "labels": [
+                "잭 해머"
+              ],
+              "score": 0.5482752919197083
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 18.56,
+              "end": 19.2,
+              "labels": [
+                "기어"
+              ],
+              "score": 0.17354372143745422
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 22.08,
+              "end": 22.4,
+              "labels": [
+                "트랜스 음악"
+              ],
+              "score": 0.06086592376232147
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 19.36,
+              "end": 24.84,
+              "labels": [
+                "음악"
+              ],
+              "score": 0.44571033120155334
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-49-6-김효종.mp3",
+      "text": "가상 업무 공간: 카센터 "
+    }
+  },
+  {
+    "id": 114,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 27.84,
+              "end": 28.8,
+              "labels": [
+                "음악"
+              ],
+              "score": 0.09094448387622833
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 9.6,
+              "end": 9.92,
+              "labels": [
+                "화재 경보"
+              ],
+              "score": 0.05790378153324127
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-49-5-이민우.mp3",
+      "text": "가상 업무 공간: 화재 경보음 소리"
+    }
+  },
+  {
+    "id": 195,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 3.84,
+              "end": 8.76,
+              "labels": [
+                "파괴"
+              ],
+              "score": 0.3284881114959717
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 14.4,
+              "end": 15.04,
+              "labels": [
+                "미닫이 문"
+              ],
+              "score": 0.060828033834695816
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 35.2,
+              "end": 36.16,
+              "labels": [
+                "탁"
+              ],
+              "score": 0.1419028490781784
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 6.29,
+              "end": 23.13,
+              "labels": [
+                "발화"
+              ],
+              "score": 0.6061920523643494
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 28.16,
+              "end": 29.12,
+              "labels": [
+                "낑낑(개)"
+              ],
+              "score": 0.12887504696846008
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 28.16,
+              "end": 29.12,
+              "labels": [
+                "깽깽(개)"
+              ],
+              "score": 0.1269097477197647
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 24.0,
+              "end": 24.64,
+              "labels": [
+                "쨍그랑, 짤랑"
+              ],
+              "score": 0.08272386342287064
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 6.08,
+              "end": 7.04,
+              "labels": [
+                "유리"
+              ],
+              "score": 0.10539888590574265
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 11.2,
+              "end": 12.16,
+              "labels": [
+                "카누"
+              ],
+              "score": 0.2604749798774719
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 26.49,
+              "end": 30.75,
+              "labels": [
+                "멍멍"
+              ],
+              "score": 0.2816816568374634
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 11.52,
+              "end": 11.84,
+              "labels": [
+                "범선"
+              ],
+              "score": 0.057359784841537476
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 20.8,
+              "end": 21.12,
+              "labels": [
+                "생쥐"
+              ],
+              "score": 0.06225131079554558
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 25.97,
+              "end": 31.31,
+              "labels": [
+                "동물"
+              ],
+              "score": 0.5754579305648804
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 11.2,
+              "end": 12.16,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.1354731172323227
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 6.4,
+              "end": 7.04,
+              "labels": [
+                "금이 감"
+              ],
+              "score": 0.06374287605285645
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 26.21,
+              "end": 31.12,
+              "labels": [
+                "애완 동물"
+              ],
+              "score": 0.4307468831539154
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 7.36,
+              "end": 7.68,
+              "labels": [
+                "철벅(액체)"
+              ],
+              "score": 0.05972020700573921
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 7.36,
+              "end": 8.64,
+              "labels": [
+                "스플래시, 뿌리"
+              ],
+              "score": 0.19694553315639496
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 19.52,
+              "end": 20.8,
+              "labels": [
+                "새"
+              ],
+              "score": 0.18885943293571472
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 40.96,
+              "end": 41.92,
+              "labels": [
+                "튀어 오름"
+              ],
+              "score": 0.10901857912540436
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 22.72,
+              "end": 28.13,
+              "labels": [
+                "식기류"
+              ],
+              "score": 0.1733989119529724
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 20.16,
+              "end": 20.48,
+              "labels": [
+                "짹짹(새)"
+              ],
+              "score": 0.05865008383989334
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 23.36,
+              "end": 24.0,
+              "labels": [
+                "망치"
+              ],
+              "score": 0.054778628051280975
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 14.08,
+              "end": 14.72,
+              "labels": [
+                "쾅(문)"
+              ],
+              "score": 0.07400381565093994
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 11.2,
+              "end": 12.16,
+              "labels": [
+                "보트"
+              ],
+              "score": 0.2526872456073761
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 23.36,
+              "end": 27.52,
+              "labels": [
+                "금속 식기류"
+              ],
+              "score": 0.11790665984153748
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 26.05,
+              "end": 31.21,
+              "labels": [
+                "개"
+              ],
+              "score": 0.5642493963241577
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 14.08,
+              "end": 15.04,
+              "labels": [
+                "문"
+              ],
+              "score": 0.09671716392040253
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 7.36,
+              "end": 8.64,
+              "labels": [
+                "물"
+              ],
+              "score": 0.10244599729776382
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 34.56,
+              "end": 35.52,
+              "labels": [
+                "쿵(치는 소리)"
+              ],
+              "score": 0.0898229256272316
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 6.4,
+              "end": 7.04,
+              "labels": [
+                "산산조각"
+              ],
+              "score": 0.08987046778202057
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-49-8-최용욱.mp3",
+      "text": "고대 문명 도시: 고대 문명 시장공원"
+    }
+  },
+  {
+    "id": 617,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 36.05,
+              "end": 39.95,
+              "labels": [
+                "화물 기차"
+              ],
+              "score": 0.19469806551933289
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 30.4,
+              "end": 36.8,
+              "labels": [
+                "자동차"
+              ],
+              "score": 0.09305361658334732
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 35.6,
+              "end": 40.39,
+              "labels": [
+                "기차"
+              ],
+              "score": 0.2493543028831482
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 1.92,
+              "end": 2.56,
+              "labels": [
+                "기계장치"
+              ],
+              "score": 0.06342778354883194
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 30.72,
+              "end": 35.51,
+              "labels": [
+                "교통 소음"
+              ],
+              "score": 0.11883650720119476
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 20.87,
+              "end": 44.23,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.4927845299243927
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 24.0,
+              "end": 36.2,
+              "labels": [
+                "버스"
+              ],
+              "score": 0.12526533007621765
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 30.72,
+              "end": 35.84,
+              "labels": [
+                "트럭"
+              ],
+              "score": 0.12921445071697235
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 35.98,
+              "end": 40.02,
+              "labels": [
+                "철도 운송"
+              ],
+              "score": 0.20000816881656647
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 30.72,
+              "end": 32.0,
+              "labels": [
+                "자동차(오프로드)"
+              ],
+              "score": 0.058999210596084595
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 7.68,
+              "end": 9.6,
+              "labels": [
+                "전자 레인지"
+              ],
+              "score": 0.09156107157468796
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-52-2-김양우.mp3",
+      "text": "하늘 도시: 하늘 도시 작업장"
+    }
+  },
+  {
+    "id": 362,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 22.48,
+              "end": 25.8,
+              "labels": [
+                "파도"
+              ],
+              "score": 0.16461652517318726
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 30.72,
+              "end": 31.36,
+              "labels": [
+                "동물"
+              ],
+              "score": 0.07183099538087845
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 25.94,
+              "end": 29.93,
+              "labels": [
+                "자동차"
+              ],
+              "score": 0.19236533343791962
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 3.43,
+              "end": 7.57,
+              "labels": [
+                "벌"
+              ],
+              "score": 0.30420663952827454
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 24.52,
+              "end": 31.36,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.18600274622440338
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 4.8,
+              "end": 6.08,
+              "labels": [
+                "파리"
+              ],
+              "score": 0.16761542856693268
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 23.0,
+              "end": 25.28,
+              "labels": [
+                "바다"
+              ],
+              "score": 0.1360401213169098
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 18.24,
+              "end": 18.56,
+              "labels": [
+                "구구"
+              ],
+              "score": 0.05261428281664848
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 15.9,
+              "end": 20.5,
+              "labels": [
+                "비둘기"
+              ],
+              "score": 0.21952328085899353
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 15.88,
+              "end": 20.58,
+              "labels": [
+                "새"
+              ],
+              "score": 0.23164121806621552
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 40.0,
+              "end": 40.96,
+              "labels": [
+                "철도 운송"
+              ],
+              "score": 0.07903876155614853
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 30.08,
+              "end": 30.72,
+              "labels": [
+                "가속"
+              ],
+              "score": 0.059699784964323044
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 40.0,
+              "end": 40.96,
+              "labels": [
+                "화물 기차"
+              ],
+              "score": 0.07695399224758148
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 6.08,
+              "end": 7.04,
+              "labels": [
+                "보트"
+              ],
+              "score": 0.09734436124563217
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 39.68,
+              "end": 40.96,
+              "labels": [
+                "기차"
+              ],
+              "score": 0.12385283410549164
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 22.4,
+              "end": 25.6,
+              "labels": [
+                "바람"
+              ],
+              "score": 0.12031092494726181
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 23.68,
+              "end": 25.28,
+              "labels": [
+                "바람소음(마이크)"
+              ],
+              "score": 0.09246890246868134
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 29.76,
+              "end": 30.08,
+              "labels": [
+                "음악"
+              ],
+              "score": 0.05457606911659241
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 4.8,
+              "end": 6.08,
+              "labels": [
+                "곤충"
+              ],
+              "score": 0.22867995500564575
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-50-7-이상화.mp3",
+      "text": "해저 도시: 제트스키 지나가는 소리"
+    }
+  },
+  {
+    "id": 253,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 29.42,
+              "end": 35.28,
+              "labels": [
+                "폭풍"
+              ],
+              "score": 0.683794379234314
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 40.11,
+              "end": 45.0,
+              "labels": [
+                "파도"
+              ],
+              "score": 0.2470298558473587
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 37.76,
+              "end": 39.36,
+              "labels": [
+                "말"
+              ],
+              "score": 0.14534640312194824
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 34.24,
+              "end": 34.88,
+              "labels": [
+                "카누"
+              ],
+              "score": 0.07938332855701447
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 22.34,
+              "end": 27.52,
+              "labels": [
+                "범선"
+              ],
+              "score": 0.18129591643810272
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 37.76,
+              "end": 39.36,
+              "labels": [
+                "동물"
+              ],
+              "score": 0.1608186513185501
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 43.82,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.27454692125320435
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 40.14,
+              "end": 45.0,
+              "labels": [
+                "바다"
+              ],
+              "score": 0.24329130351543427
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 14.08,
+              "end": 16.32,
+              "labels": [
+                "외부, 농촌 또는 자연"
+              ],
+              "score": 0.07378873974084854
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 29.25,
+              "end": 35.43,
+              "labels": [
+                "비"
+              ],
+              "score": 0.801948070526123
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 29.47,
+              "end": 35.25,
+              "labels": [
+                "천둥"
+              ],
+              "score": 0.6687825918197632
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 22.08,
+              "end": 23.36,
+              "labels": [
+                "철도 운송"
+              ],
+              "score": 0.17786268889904022
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 30.22,
+              "end": 34.9,
+              "labels": [
+                "빗방울"
+              ],
+              "score": 0.2892637550830841
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 11.52,
+              "end": 11.84,
+              "labels": [
+                "모터 보트"
+              ],
+              "score": 0.05420566722750664
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 22.08,
+              "end": 23.04,
+              "labels": [
+                "화물 기차"
+              ],
+              "score": 0.15858329832553864
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 39.11,
+              "end": 45.0,
+              "labels": [
+                "보트"
+              ],
+              "score": 0.33910706639289856
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 22.08,
+              "end": 23.36,
+              "labels": [
+                "기차"
+              ],
+              "score": 0.20705144107341766
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 31.36,
+              "labels": [
+                "바람"
+              ],
+              "score": 0.2632036507129669
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 29.52,
+              "end": 35.3,
+              "labels": [
+                "부딪히는 빗소리"
+              ],
+              "score": 0.5482908487319946
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 21.2,
+              "end": 31.36,
+              "labels": [
+                "바람소음(마이크)"
+              ],
+              "score": 0.29811155796051025
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 35.85,
+              "end": 40.6,
+              "labels": [
+                "말발굽 소리"
+              ],
+              "score": 0.2595688998699188
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-50-3-김원준.mp3",
+      "text": "고대 문명 도시: 말을 타고 바람을 가로지르는 소리"
+    }
+  },
+  {
+    "id": 95,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 7.75,
+              "end": 20.84,
+              "labels": [
+                "발화"
+              ],
+              "score": 0.7075515389442444
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 14.4,
+              "end": 19.49,
+              "labels": [
+                "내부, 작은 방"
+              ],
+              "score": 0.19728747010231018
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 14.53,
+              "end": 20.3,
+              "labels": [
+                "전화 다이얼링, DTMF"
+              ],
+              "score": 0.697253406047821
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 14.72,
+              "end": 15.68,
+              "labels": [
+                "경고음"
+              ],
+              "score": 0.14375104010105133
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 14.72,
+              "end": 19.75,
+              "labels": [
+                "전화"
+              ],
+              "score": 0.2645223140716553
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 15.04,
+              "end": 15.36,
+              "labels": [
+                "금전 등록기"
+              ],
+              "score": 0.061324696987867355
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 18.04,
+              "end": 44.71,
+              "labels": [
+                "타자"
+              ],
+              "score": 0.8363491892814636
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 18.05,
+              "end": 44.64,
+              "labels": [
+                "컴퓨터 키보드"
+              ],
+              "score": 0.7939068078994751
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 37.76,
+              "end": 38.4,
+              "labels": [
+                "새"
+              ],
+              "score": 0.12192145735025406
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-49-4-최보영.mp3",
+      "text": "가상 업무 공간: 가상업무공간 5 (PC활용 2)"
+    }
+  },
+  {
+    "id": 918,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 72.43,
+              "end": 80.65,
+              "labels": [
+                "지하철"
+              ],
+              "score": 0.15421798825263977
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.96,
+              "end": 1.6,
+              "labels": [
+                "외부, 도시 또는 인공"
+              ],
+              "score": 0.05869751796126366
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 69.76,
+              "end": 79.72,
+              "labels": [
+                "화물 기차"
+              ],
+              "score": 0.15110093355178833
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 24.64,
+              "end": 26.56,
+              "labels": [
+                "고정 날개 항공기"
+              ],
+              "score": 0.1147780492901802
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 43.84,
+              "end": 44.16,
+              "labels": [
+                "핑크 소음"
+              ],
+              "score": 0.050226304680109024
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 69.02,
+              "end": 81.24,
+              "labels": [
+                "기차"
+              ],
+              "score": 0.19721023738384247
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 80.64,
+              "end": 81.6,
+              "labels": [
+                "발화"
+              ],
+              "score": 0.0680137574672699
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 100.0,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.38395968079566956
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 24.02,
+              "end": 26.56,
+              "labels": [
+                "항공기"
+              ],
+              "score": 0.12940151989459991
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 69.76,
+              "end": 79.96,
+              "labels": [
+                "철도 운송"
+              ],
+              "score": 0.14495399594306946
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 16.64,
+              "end": 17.6,
+              "labels": [
+                "외부, 농촌 또는 자연"
+              ],
+              "score": 0.06890436261892319
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-53-6-김효종.mp3",
+      "text": "공항: 김포공항 국내선 4층 전망대 흡연장"
+    }
+  },
+  {
+    "id": 45,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 38.4,
+              "end": 39.68,
+              "labels": [
+                "동물"
+              ],
+              "score": 0.12394704669713974
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 20.8,
+              "end": 21.12,
+              "labels": [
+                "화물 기차"
+              ],
+              "score": 0.054213766008615494
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 36.16,
+              "end": 37.12,
+              "labels": [
+                "미닫이 문"
+              ],
+              "score": 0.0941474586725235
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 16.32,
+              "end": 16.96,
+              "labels": [
+                "자동차"
+              ],
+              "score": 0.07343318313360214
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 20.48,
+              "end": 21.44,
+              "labels": [
+                "기차"
+              ],
+              "score": 0.08361545205116272
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 11.52,
+              "end": 12.16,
+              "labels": [
+                "쾅(문)"
+              ],
+              "score": 0.05957906320691109
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 9.6,
+              "end": 10.56,
+              "labels": [
+                "내부, 큰 방 또는 홀"
+              ],
+              "score": 0.0667882189154625
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 34.97,
+              "end": 45.0,
+              "labels": [
+                "발화"
+              ],
+              "score": 0.6173564791679382
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 14.65,
+              "end": 21.76,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.16539189219474792
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 36.48,
+              "end": 36.8,
+              "labels": [
+                "문"
+              ],
+              "score": 0.05065571889281273
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 20.8,
+              "end": 21.44,
+              "labels": [
+                "철도 운송"
+              ],
+              "score": 0.05716468393802643
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 7.36,
+              "end": 8.0,
+              "labels": [
+                "음악"
+              ],
+              "score": 0.05284824222326279
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 11.2,
+              "end": 12.48,
+              "labels": [
+                "쿵(치는 소리)"
+              ],
+              "score": 0.18595778942108154
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-49-2-채강해.mp3",
+      "text": "가상 업무 공간: 사무실창문넘어로 들리는 밖소리"
+    }
+  },
+  {
+    "id": 344,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 33.1,
+              "end": 41.67,
+              "labels": [
+                "음악"
+              ],
+              "score": 0.12304618954658508
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 36.8,
+              "end": 45.0,
+              "labels": [
+                "징"
+              ],
+              "score": 0.5159841179847717
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 34.24,
+              "end": 35.2,
+              "labels": [
+                "고래 의사소통"
+              ],
+              "score": 0.05858979374170303
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 31.36,
+              "end": 36.16,
+              "labels": [
+                "우르릉"
+              ],
+              "score": 0.08772426843643188
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-50-7-가민지.mp3",
+      "text": "해저 도시: 해저 도시 교통편 2"
+    }
+  },
+  {
+    "id": 443,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 23.36,
+              "end": 24.64,
+              "labels": [
+                "글로켄슈필"
+              ],
+              "score": 0.10660795122385025
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 28.31,
+              "end": 31.98,
+              "labels": [
+                "악기"
+              ],
+              "score": 0.1370062232017517
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 4.55,
+              "end": 9.16,
+              "labels": [
+                "타악기"
+              ],
+              "score": 0.24905352294445038
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 23.36,
+              "end": 24.64,
+              "labels": [
+                "말렛 타악기"
+              ],
+              "score": 0.10902758687734604
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 28.5,
+              "end": 33.6,
+              "labels": [
+                "마림바, 자일로폰"
+              ],
+              "score": 0.17142830789089203
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 10.29,
+              "end": 15.11,
+              "labels": [
+                "고래 의사소통"
+              ],
+              "score": 0.4484940767288208
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 6.4,
+              "end": 7.36,
+              "labels": [
+                "튜블라 벨"
+              ],
+              "score": 0.06356768310070038
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 6.4,
+              "end": 6.72,
+              "labels": [
+                "드럼"
+              ],
+              "score": 0.05793284252285957
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 34.24,
+              "end": 34.88,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.06152546405792236
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 14.72,
+              "end": 15.68,
+              "labels": [
+                "아이스크림 트럭"
+              ],
+              "score": 0.08676663786172867
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 29.76,
+              "end": 31.04,
+              "labels": [
+                "비브라폰"
+              ],
+              "score": 0.1259228140115738
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 35.84,
+              "end": 37.12,
+              "labels": [
+                "스틸팬"
+              ],
+              "score": 0.12620745599269867
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 45.0,
+              "labels": [
+                "음악"
+              ],
+              "score": 0.5174180269241333
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-51-3-김규동.mp3",
+      "text": "해저 도시: 해저 도시 미스터리어스한 장소"
+    }
+  },
+  {
+    "id": 64,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 22.08,
+              "end": 23.04,
+              "labels": [
+                "전자 레인지"
+              ],
+              "score": 0.099448561668396
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 23.36,
+              "end": 24.64,
+              "labels": [
+                "자동차"
+              ],
+              "score": 0.06495673954486847
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 21.79,
+              "end": 26.74,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.18271440267562866
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-49-3-이동화.mp3",
+      "text": "가상 업무 공간: 업무 공간 (Room)"
+    }
+  },
+  {
+    "id": 497,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 15.36,
+              "end": 25.62,
+              "labels": [
+                "소방차(사이렌)"
+              ],
+              "score": 0.17356263101100922
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 13.4,
+              "end": 26.54,
+              "labels": [
+                "응급 차량"
+              ],
+              "score": 0.46922409534454346
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 14.74,
+              "end": 25.88,
+              "labels": [
+                "경찰차(사이렌)"
+              ],
+              "score": 0.2394605576992035
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 20.16,
+              "end": 21.12,
+              "labels": [
+                "자동차"
+              ],
+              "score": 0.06040824577212334
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 13.65,
+              "end": 26.19,
+              "labels": [
+                "사이렌"
+              ],
+              "score": 0.3220038414001465
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 10.24,
+              "labels": [
+                "고동"
+              ],
+              "score": 0.2414761483669281
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 11.48,
+              "labels": [
+                "웅웅"
+              ],
+              "score": 0.2989329695701599
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 12.51,
+              "end": 34.56,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.2158893346786499
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 23.36,
+              "end": 24.32,
+              "labels": [
+                "트럭"
+              ],
+              "score": 0.05548259615898132
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 35.52,
+              "end": 36.48,
+              "labels": [
+                "일렉트로닉 음악"
+              ],
+              "score": 0.0804409459233284
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 13.45,
+              "end": 24.84,
+              "labels": [
+                "구급차(사이렌)"
+              ],
+              "score": 0.365439772605896
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 32.41,
+              "end": 45.0,
+              "labels": [
+                "음악"
+              ],
+              "score": 0.47678816318511963
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 34.88,
+              "end": 36.16,
+              "labels": [
+                "무서운 음악"
+              ],
+              "score": 0.12630930542945862
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 34.88,
+              "end": 36.48,
+              "labels": [
+                "환경 음악"
+              ],
+              "score": 0.10142248868942261
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 4.32,
+              "labels": [
+                "낮은 전기 잡음"
+              ],
+              "score": 0.09965580701828003
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-51-5-김원준.mp3",
+      "text": "하늘 도시: 비행 경찰 사이렌 소리"
+    }
+  },
+  {
+    "id": 1055,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 1.01,
+              "end": 4.78,
+              "labels": [
+                "아이 발화"
+              ],
+              "score": 0.24143224954605103
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 2.56,
+              "end": 3.84,
+              "labels": [
+                "내부, 작은 방"
+              ],
+              "score": 0.09845113754272461
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 8.59,
+              "end": 25.42,
+              "labels": [
+                "발화"
+              ],
+              "score": 0.5706523060798645
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 9.28,
+              "end": 10.24,
+              "labels": [
+                "동전"
+              ],
+              "score": 0.08392567932605743
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 17.28,
+              "end": 18.24,
+              "labels": [
+                "재잘거림, 옹알이"
+              ],
+              "score": 0.09761612117290497
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 26.56,
+              "end": 27.2,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.08045684546232224
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 33.35,
+              "end": 43.84,
+              "labels": [
+                "금속 식기류"
+              ],
+              "score": 0.5830704569816589
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 33.57,
+              "end": 43.92,
+              "labels": [
+                "식기류"
+              ],
+              "score": 0.492288738489151
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 34.88,
+              "end": 40.14,
+              "labels": [
+                "휘젓기"
+              ],
+              "score": 0.33886125683784485
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 55.04,
+              "end": 56.0,
+              "labels": [
+                "유리"
+              ],
+              "score": 0.09986560046672821
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 57.01,
+              "end": 60.16,
+              "labels": [
+                "쨍그랑, 짤랑"
+              ],
+              "score": 0.15819776058197021
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 58.24,
+              "end": 59.84,
+              "labels": [
+                "파괴"
+              ],
+              "score": 0.13512849807739258
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 60.29,
+              "end": 64.83,
+              "labels": [
+                "가위"
+              ],
+              "score": 0.3921152949333191
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 62.72,
+              "end": 64.64,
+              "labels": [
+                "열쇠"
+              ],
+              "score": 0.1397201120853424
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 64.31,
+              "end": 70.29,
+              "labels": [
+                "글쓰기"
+              ],
+              "score": 0.4871728718280792
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 72.65,
+              "end": 79.36,
+              "labels": [
+                "음악"
+              ],
+              "score": 0.43339574337005615
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 95.68,
+              "end": 96.32,
+              "labels": [
+                "천장 여닫는 소리"
+              ],
+              "score": 0.0696641206741333
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/r-1-1-5-12-박영진.mp3",
+      "text": "전시장: 전시회 체험코너"
+    }
+  },
+  {
+    "id": 381,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 4.2,
+              "end": 8.34,
+              "labels": [
+                "래칫, 폴"
+              ],
+              "score": 0.26534444093704224
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 4.16,
+              "end": 5.12,
+              "labels": [
+                "쾅"
+              ],
+              "score": 0.08255235105752945
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 35.2,
+              "end": 35.52,
+              "labels": [
+                "기차"
+              ],
+              "score": 0.07167627662420273
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 3.59,
+              "end": 8.92,
+              "labels": [
+                "기계장치"
+              ],
+              "score": 0.5583962202072144
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 5.12,
+              "labels": [
+                "기관총"
+              ],
+              "score": 0.3705979585647583
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 25.02,
+              "end": 30.68,
+              "labels": [
+                "잭 해머"
+              ],
+              "score": 0.3442869484424591
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 34.24,
+              "end": 37.2,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.13286826014518738
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 5.44,
+              "end": 7.04,
+              "labels": [
+                "기어"
+              ],
+              "score": 0.22918155789375305
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 3.92,
+              "end": 8.61,
+              "labels": [
+                "삐걱거림"
+              ],
+              "score": 0.393299400806427
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 0.0,
+              "end": 5.12,
+              "labels": [
+                "총격"
+              ],
+              "score": 0.29761257767677307
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 35.2,
+              "end": 35.52,
+              "labels": [
+                "철도 운송"
+              ],
+              "score": 0.0636744573712349
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 22.99,
+              "end": 27.35,
+              "labels": [
+                "음악"
+              ],
+              "score": 0.27637946605682373
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 3.84,
+              "end": 5.12,
+              "labels": [
+                "연속 사격"
+              ],
+              "score": 0.1868087202310562
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 24.64,
+              "end": 25.6,
+              "labels": [
+                "신디사이저"
+              ],
+              "score": 0.13217614591121674
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 13.44,
+              "end": 14.08,
+              "labels": [
+                "엔진"
+              ],
+              "score": 0.051335521042346954
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/fs-2-3-50-8-박한진.mp3",
+      "text": "해저 도시: 해저도시 건설 현장"
+    }
+  },
+  {
+    "id": 1265,
+    "predictions": [
+      {
+        "id": 1,
+        "result": [
+          {
+            "value": {
+              "start": 30.08,
+              "end": 31.36,
+              "labels": [
+                "지하철"
+              ],
+              "score": 0.12814804911613464
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 62.08,
+              "end": 63.04,
+              "labels": [
+                "동물"
+              ],
+              "score": 0.06982319802045822
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 28.24,
+              "end": 32.72,
+              "labels": [
+                "화물 기차"
+              ],
+              "score": 0.22886422276496887
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 2.24,
+              "end": 3.52,
+              "labels": [
+                "미닫이 문"
+              ],
+              "score": 0.12179923057556152
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 10.24,
+              "end": 11.52,
+              "labels": [
+                "쾅(문)"
+              ],
+              "score": 0.16288258135318756
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 27.69,
+              "end": 33.11,
+              "labels": [
+                "기차"
+              ],
+              "score": 0.3070869743824005
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 92.8,
+              "end": 93.44,
+              "labels": [
+                "바람"
+              ],
+              "score": 0.06119520962238312
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 42.24,
+              "end": 46.08,
+              "labels": [
+                "내부, 공공 장소"
+              ],
+              "score": 0.09359809756278992
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 76.16,
+              "end": 76.8,
+              "labels": [
+                "아이스크림 트럭"
+              ],
+              "score": 0.08903709799051285
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 27.66,
+              "end": 32.84,
+              "labels": [
+                "차량"
+              ],
+              "score": 0.15463688969612122
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 30.4,
+              "end": 31.36,
+              "labels": [
+                "짤깍짤깍"
+              ],
+              "score": 0.0759146437048912
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 92.48,
+              "end": 93.76,
+              "labels": [
+                "파도"
+              ],
+              "score": 0.11985881626605988
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 16.64,
+              "end": 17.28,
+              "labels": [
+                "쨍그랑, 짤랑"
+              ],
+              "score": 0.08302702754735947
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 28.15,
+              "end": 32.83,
+              "labels": [
+                "철도 운송"
+              ],
+              "score": 0.2382441759109497
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 73.63,
+              "end": 78.64,
+              "labels": [
+                "음악"
+              ],
+              "score": 0.3272807002067566
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 10.56,
+              "end": 11.2,
+              "labels": [
+                "쿵(치는 소리)"
+              ],
+              "score": 0.06813401728868484
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          },
+          {
+            "value": {
+              "start": 92.48,
+              "end": 93.76,
+              "labels": [
+                "바다"
+              ],
+              "score": 0.12331441044807434
+            },
+            "from_name": "label",
+            "to_name": "audio",
+            "type": "labels"
+          }
+        ]
+      }
+    ],
+    "data": {
+      "audio": "/data/local-files/?d=data_v4/01/mp3/r-1-1-5-9-박영진.mp3",
+      "text": "백화점: 광교 갤러리아 백화점 10층 스타벅스 카페 앰비언스"
+    }
+  }
+]
