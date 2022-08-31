@@ -21,10 +21,11 @@ if __name__ == "__main__":
     pred_json = json.load(f)
   
   if args.sampling:
+    random.seed(4)
     random.shuffle(pred_json)
   
   for i in range(args.iter):
     divided_pred_json = pred_json[args.hop_size*i:args.hop_size*(i+1)]
   
-    with open(f"kor_data_v4_02_1200_unsampled/{args.hop_size*i}to{args.hop_size*(i+1)}.json", "w") as json_file:
+    with open(f"kor_data_v4_02_1200_sampled/{args.hop_size*i}to{args.hop_size*(i+1)}.json", "w") as json_file:
       json.dump(divided_pred_json, json_file, ensure_ascii=False)

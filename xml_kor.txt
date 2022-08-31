@@ -365,7 +365,7 @@
     <Label value="탁탁(불)" background="#FF0000"/>
     <Label value="들불" background="#FF0000"/>
     <Label value="사물의 소리" background="#8FBC8B"/>
-    <Label value="차량" background="#8FBC8B"/>
+    <Label value="운송 수단" background="#8FBC8B"/>
     <Label value="보트" background="#8FBC8B"/>
     <Label value="범선" background="#8FBC8B"/>
     <Label value="카누" background="#8FBC8B"/>
@@ -605,11 +605,11 @@
     <Label value="공명" background="#98FB98"/>
     <Label value="채널, 환경 및 배경" background="#BDB76B"/>
     <Label value="음향 환경" background="#BDB76B"/>
-    <Label value="내부, 작은 방" background="#BDB76B"/>
-    <Label value="내부, 큰 방 또는 홀" background="#BDB76B"/>
-    <Label value="내부, 공공 장소" background="#BDB76B"/>
-    <Label value="외부, 도시 또는 인공" background="#BDB76B"/>
-    <Label value="외부, 농촌 또는 자연" background="#BDB76B"/>
+    <Label value="내부 환경(작은 방)" background="#BDB76B"/>
+    <Label value="내부 환경(큰 방 또는 홀)" background="#BDB76B"/>
+    <Label value="내부 환경(공공 장소)" background="#BDB76B"/>
+    <Label value="외부 환경(도시)" background="#BDB76B"/>
+    <Label value="외부 환경(농촌 또는 자연)" background="#BDB76B"/>
     <Label value="반향" background="#BDB76B"/>
     <Label value="에코" background="#BDB76B"/>
     <Label value="소음" background="#66CDAA"/>
