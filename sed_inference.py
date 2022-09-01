@@ -113,10 +113,9 @@ def jsonify(event_labels, dataset, meta_manager:MetaCreator):
   for piece_event in event_labels:
     # piece_event는 list of dict
     event_id = piece_event[0]['data_id']
-    sample_path = dataset.wav_list[event_id].relative_to(dataset.path) # dataset path 안에서 wav sample의 상대 경로
-    sample_path = sample_path.parent.parent / 'mp3' / (sample_path.stem + '.mp3')
-    sample_path = '/data/local-files/?d=nia_dataset/' + str(sample_path)
-    # sample_path = '/data/local-files/nia_dataset/'+sample_path
+    #sample_path = dataset.wav_list[event_id].relative_to(dataset.path) # dataset path 안에서 wav sample의 상대 경로
+    sample_path = dataset.mp3_list[event_id].relative_to(dataset.path) # mp3 sample의 상대 경로
+    sample_path = '/data/local-files/?d=data_v4/03/' + str(sample_path)
 
     annotations =[{'id': 1,
                     'result': [{ #"value"의 key는 label-studio에서 인식되는 key들이라 변경하면 안됨
@@ -133,19 +132,20 @@ def jsonify(event_labels, dataset, meta_manager:MetaCreator):
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser("sed_inference")
-  parser.add_argument('--path', type=str, default='/home/teo/label-studio_files/nia_dataset/',
+  parser.add_argument('--path', type=str, default='/home/clay/label_studio_files/data_v4/03/',
                       help='directory path to the dataset')
   parser.add_argument('--vocab_path', type=str, default='vocab.json',
                       help='directory path to the dataset')
   parser.add_argument('--threshold', type=float, default=0.1,
                       help='sound event detection threshold value')
-  parser.add_argument('--batch_size', type=int, default=16,
-                      help='sound event detection threshold value')
+  parser.add_argument('--batch_size', type=int, default=8,
+                      help='data batch size')
 
   args = parser.parse_args()
 
   dataset = OnFlyAudio(args.path)
   meta_manager = MetaCreator(args.vocab_path)
+  #dataset.only_correct_meta()
 
   data_loader = DataLoader(dataset, batch_size=args.batch_size, collate_fn=pad_collate, pin_memory=True, num_workers=2, drop_last=False)
 

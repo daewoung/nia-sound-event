@@ -8,6 +8,8 @@ import numpy as np
 import pandas as pd
 from math import isnan
 
+from collections import defaultdict
+
 class MetaCreator:
   def __init__(self, vocab_path, dataset_dir = None):
     with open(vocab_path, 'r') as f:
@@ -15,8 +17,7 @@ class MetaCreator:
     self.error_list = []
     self.dataset_dir =dataset_dir
     self.audio_feature_extractor = AudioFeatureExtractor()
-    # self.error_dict = {'docx_format_problem': [],
-    #                    'docx_missing: []}
+    self.error_dict = defaultdict(list)
 
   def get_recording_type(self, wav_path):
     if 'fs' in wav_path:
@@ -46,6 +47,7 @@ class MetaCreator:
 
   def add_error(self, wav_path, error_str):
     self.error_list.append({'file': wav_path.name, 'error': error_str})
+    self.error_dict[error_str].append(wav_path.name)
 
   def read_docx(self, wav_path):
     '''
