@@ -8,8 +8,12 @@ if __name__ == "__main__":
   parser = argparse.ArgumentParser("json_meta_error_splitter")
   parser.add_argument('--target_path', type=str, default='prediction_threshold0.05.json',
                       help='json file to break error list')
+  parser.add_argument('--data_num', type=str, default='03',
+                      help='json file to break error list')
   
-  dataset = OnFlyAudio('/home/clay/label_studio_files/data_v4/02/')
+  args = parser.parse_args()
+  
+  dataset = OnFlyAudio(f'/home/clay/label_studio_files/data_v4/{args.data_num}/')
   meta_creator = MetaCreator('vocab.json')
   entire_meta = [meta_creator.create_meta_for_wav(wav) for wav in dataset.wav_list]
 
@@ -22,9 +26,7 @@ if __name__ == "__main__":
     
   new_pred_json = []
   
-  # for i in range(len(error_dict_list)):
   for j in range(len(pred_json)):
-    # if error_dict_list[i][:-4] in pred_json[j]['data']['audio']:
     file_name = Path(pred_json[j]['data']['audio']).with_suffix(".wav").name
     if file_name in error_dict_list:
       continue
