@@ -5,7 +5,7 @@ import random
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser("pred_json_divider")
-  parser.add_argument('--path', type=str, default='translated_prediction_threshold0.05.json',
+  parser.add_argument('--path', type=str, default='translated_meta_prediction_threshold0.05.json',
                       help='directory path to the json file')
   parser.add_argument('--hop_size', type=int, default=30,
                       help='hop size between two consecutive data')

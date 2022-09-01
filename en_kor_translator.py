@@ -5,7 +5,7 @@ import argparse
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser("en_kor_translator")
-  parser.add_argument('--target_path', type=str, default='prediction_threshold0.05.json',
+  parser.add_argument('--target_path', type=str, default='meta_prediction_threshold0.05.json',
                       help='json file to translate')
   
   args = parser.parse_args()

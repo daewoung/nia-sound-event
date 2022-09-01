@@ -429,7 +429,7 @@
     <Label value="노크" background="#87CEEB"/>
     <Label value="톡톡" background="#87CEEB"/>
     <Label value="끽" background="#87CEEB"/>
-    <Label value="천장 여닫는 소리" background="#87CEEB"/>
+    <Label value="찬장 여닫는 소리" background="#87CEEB"/>
     <Label value="서랍 여닫는 소리" background="#87CEEB"/>
     <Label value="식기류" background="#87CEEB"/>
     <Label value="금속 식기류" background="#87CEEB"/>

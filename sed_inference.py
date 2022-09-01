@@ -144,8 +144,8 @@ if __name__ == "__main__":
   args = parser.parse_args()
 
   dataset = OnFlyAudio(args.path)
-  dataset.only_correct_meta()
   meta_manager = MetaCreator(args.vocab_path)
+  #dataset.only_correct_meta()
 
   data_loader = DataLoader(dataset, batch_size=args.batch_size, collate_fn=pad_collate, pin_memory=True, num_workers=2, drop_last=False)
 
