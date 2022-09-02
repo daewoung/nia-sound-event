@@ -115,7 +115,7 @@ def jsonify(event_labels, dataset, meta_manager:MetaCreator):
     event_id = piece_event[0]['data_id']
     #sample_path = dataset.wav_list[event_id].relative_to(dataset.path) # dataset path 안에서 wav sample의 상대 경로
     sample_path = dataset.mp3_list[event_id].relative_to(dataset.path) # mp3 sample의 상대 경로
-    sample_path = '/data/local-files/?d=data_v4/03/' + str(sample_path)
+    sample_path = '/data/local-files/?d=data_v4/04/' + str(sample_path)
 
     annotations =[{'id': 1,
                     'result': [{ #"value"의 key는 label-studio에서 인식되는 key들이라 변경하면 안됨
@@ -132,7 +132,7 @@ def jsonify(event_labels, dataset, meta_manager:MetaCreator):
 
 if __name__ == "__main__":
   parser = argparse.ArgumentParser("sed_inference")
-  parser.add_argument('--path', type=str, default='/home/clay/label_studio_files/data_v4/03/',
+  parser.add_argument('--path', type=str, default='/home/clay/label_studio_files/data_v4/04/',
                       help='directory path to the dataset')
   parser.add_argument('--vocab_path', type=str, default='vocab.json',
                       help='directory path to the dataset')
